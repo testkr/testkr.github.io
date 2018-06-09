@@ -53,7 +53,7 @@
         ng-class="{ active: filters.server == type }" ng-click="onFilterClick($event,type)">{{type}}</span>
     <span ng-repeat="type in [ '레어 동료', '레어 동료 제외' ]" class="filter width-6 drop" ng-model="filters.rr"
         ng-class="{ active: filters.rr == type }" ng-click="onFilterClick($event,type)">{{type}}</span>
-    <span ng-repeat="type in [ '소켓 캐릭터', '비소켓 캐릭터s' ]" class="filter width-6 drop" ng-model="filters.socket"
+    <span ng-repeat="type in [ '소켓 캐릭터', '비소켓 캐릭터' ]" class="filter width-6 drop" ng-model="filters.socket"
         ng-class="{ active: filters.socket == type }" ng-click="onFilterClick($event,type)">{{type}}</span>
 </div>
 

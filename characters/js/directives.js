@@ -385,17 +385,17 @@
                 if (flags.special) element.append($('<span class="tag flag">이벤트</div>'));
                 if (CharUtils.checkFarmable(id, { '스토리': true }))
                     element.append($('<span class="tag flag">스토리 한정</div>'));
-                if (CharUtils.checkFarmable(id, { Fortnight: true }))
+                if (CharUtils.checkFarmable(id, { '스페셜 던전': true }))
                     element.append($('<span class="tag flag">스페셜던전 한정</div>'));
-                if (CharUtils.checkFarmable(id, { Raid: true }))
+                if (CharUtils.checkFarmable(id, { '강림': true }))
                     element.append($('<span class="tag flag">강림 한정</div>'));
                 if (CharUtils.checkFarmable(id, { Treasure: true }))
                     element.append($('<span class="tag flag">트레져 맵 한정</div>'));
-                if (CharUtils.checkFarmable(id, { '스토리': true, Fortnight: true }))
+                if (CharUtils.checkFarmable(id, { '스토리': true, '스페셜 던전': true }))
                     element.append($('<span class="tag flag">스토리 & 스페셜던전</div>'));
-                if (CharUtils.checkFarmable(id, { '스토리': true, Raid: true }))
+                if (CharUtils.checkFarmable(id, { '스토리': true, '강림': true }))
                     element.append($('<span class="tag flag">스토리 & 강림</div>'));
-                if (CharUtils.checkFarmable(id, { Raid: true, Fortnight: true }))
+                if (CharUtils.checkFarmable(id, { '강림': true, '스페셜 던전': true }))
                     element.append($('<span class="tag flag">강림 & 스페셜던전</div>'));
                 // matchers
                 if (!data) return;
