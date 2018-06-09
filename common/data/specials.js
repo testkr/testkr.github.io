@@ -55,7 +55,7 @@ window.specials = {
         type: "type"
     },
     263: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     267: {
         def: function(p) { return 0.5; }
@@ -84,10 +84,10 @@ window.specials = {
         type: "class"
     },
     323: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     324: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     352: {
         atk: function(p) { return p.unit.class.has("사격") ? 1.75 : 1; },
@@ -115,10 +115,10 @@ window.specials = {
         def: function(p) { return 0.2; }
     },
     395: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.25, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.25, [p.friendCaptain, p.captain], p.effectName); }
     },
     396: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.25, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.25, [p.friendCaptain, p.captain], p.effectName); }
     },
     399: {
         atk: function(p) { return p.unit.type == "기술" ? 1.5 : 1; },
@@ -153,10 +153,10 @@ window.specials = {
         delay: function(p) { return 1; },
     },
     417: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName); }
     },
     418: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName); }
     },
     419: {
         def: function(p) { return 0.5; }
@@ -175,13 +175,13 @@ window.specials = {
         def: function(p) { return 0.5; }
     },
     430: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     431: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     434: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.25, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.25, [p.friendCaptain, p.captain], p.effectName); }
     },
     450: {
         atk: function(p) { return p.unit.class.has("격투") ? 1.5 : 1; },
@@ -219,7 +219,7 @@ window.specials = {
         type: "class"
     },
     465: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.25, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.25, [p.friendCaptain, p.captain], p.effectName); }
     },
     466: {
         delay: function(p) { return 1; },
@@ -308,10 +308,10 @@ window.specials = {
         def: function(p) { return 0; }
     },
     533: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     534: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     542: {
         rcv: function(p) { return 2; }
@@ -342,10 +342,10 @@ window.specials = {
         delay: function(p) { return 1; },
     },
     559: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     560: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     568: {
         delay: function(p) { return 1; },
@@ -450,36 +450,36 @@ window.specials = {
         warning: "Selected special (%name%) assumes that the enemy has a defense buff active."
     },
     642: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName); }
     },
     643: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName); }
     },
     644: {
-        atk: function(p) { return p.delayed ? 1.2 : 1; },
+        atk: function(p) { return p.delayed > 0 ? 1.2 : 1; },
         type: "condition",
     },
     645: {
-        atk: function(p) { return p.delayed ? 1.2 : 1; },
+        atk: function(p) { return p.delayed > 0 ? 1.2 : 1; },
         type: "condition",
     },
     648: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     649: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     650: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     651: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     655: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.25, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.25, [p.friendCaptain, p.captain], p.effectName); }
     },
     656: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.25, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.25, [p.friendCaptain, p.captain], p.effectName); }
     },
     660: {
         delay: function(p) { return 1; },
@@ -551,10 +551,10 @@ window.specials = {
         type: "class"
     },
     689: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     690: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     710: {
         atk: function(p) { return p.unit.class.has("사격") ? 1.25 : 1; },
@@ -632,16 +632,16 @@ window.specials = {
         warning: "Selected special (%name%) assumes that the enemy has a defense buff active."
     },
     742: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.25, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.25, [p.friendCaptain, p.captain], p.effectName); }
     },
     743: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.25, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.25, [p.friendCaptain, p.captain], p.effectName); }
     },
     753: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName); }
     },
     754: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName); }
     },
     755: {
         atk: function(p) { return p.unit.class.has("강인") ? 1.75 : 1; },
@@ -663,7 +663,7 @@ window.specials = {
         delay: function(p) { return 1; },
     },
     770: {
-        atk: function(p) { return p.delayed ? 1.3 : 1; },
+        atk: function(p) { return p.delayed > 0 ? 1.3 : 1; },
         type: "condition",
     },
     771: {
@@ -749,10 +749,10 @@ window.specials = {
         type: "type"
     },
     805: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName); }
     },
     806: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName); }
     },
     807: {
         atk: function(p) { return p.defenseDown ? 1.3 : 1; },
@@ -763,16 +763,16 @@ window.specials = {
         type: "condition"
     },
     809: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); },
         def: function(p) { return 0.2; }
     },
     810: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); },
         def: function(p) { return 0.2; }
     },
     813: {
         delay: function(p) { return 1; },
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.25, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.25, [p.friendCaptain, p.captain], p.effectName); }
     },
     822: {
         rcvStatic: function(p) { return 100; },
@@ -825,10 +825,10 @@ window.specials = {
         type: "class"
     },
     835: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName); }
     },
     836: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName); }
     },
     837: {
         atk: function(p) { return p.unit.class.has("야심") ? 1.75 : 1; },
@@ -848,12 +848,12 @@ window.specials = {
     },
     841: {
         delay: function(p) { return 1; },
-        atk: function(p) { return p.delayed ? 1.25 : 1; },
+        atk: function(p) { return p.delayed > 0 ? 1.25 : 1; },
         type: "condition",
     },
     842: {
         delay: function(p) { return 1; },
-        atk: function(p) { return p.delayed ? 1.25 : 1; },
+        atk: function(p) { return p.delayed > 0 ? 1.25 : 1; },
         type: "condition",
     },
     843: {
@@ -866,8 +866,8 @@ window.specials = {
             window.specials[843].first = !window.specials[843].first;
             p.scope.notify({
                 text: (window.specials[843].first ?
-                    'Boosting Shooters. To switch to the second multiplier, disable and re-enable this special' :
-                    'Boosting Shooters, Slashers and Strikers. To switch to the first multiplier, disable and re-enable this special'),
+                    'Boosting 사격s. To switch to the second multiplier, disable and re-enable this special' :
+                    'Boosting 사격s, 참격s and 타격s. To switch to the first multiplier, disable and re-enable this special'),
                 name: '843warning'
             });
         }
@@ -882,20 +882,20 @@ window.specials = {
             window.specials[844].first = !window.specials[844].first;
             p.scope.notify({
                 text: (window.specials[844].first ?
-                    'Boosting Shooters. To switch to the second multiplier, disable and re-enable this special' :
-                    'Boosting Shooters, Slashers and Strikers. To switch to the first multiplier, disable and re-enable this special'),
+                    'Boosting 사격s. To switch to the second multiplier, disable and re-enable this special' :
+                    'Boosting 사격s, 참격s and 타격s. To switch to the first multiplier, disable and re-enable this special'),
                 name: '844warning'
             });
         }
     },
     847: {
         atk: function(p) { return 1.05; },
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.15, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.15, [p.friendCaptain, p.captain], p.effectName); },
         type: "class"
     },
     848: {
         atk: function(p) { return 1.05; },
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.15, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.15, [p.friendCaptain, p.captain], p.effectName); },
         type: "class"
     },
     849: {
@@ -914,10 +914,10 @@ window.specials = {
         type: "type"
     },
     861: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     862: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     863: {
         def: function(p) { return 0.5; }
@@ -948,39 +948,29 @@ window.specials = {
         delay: function(p) { return 1; },
     },
     869: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2.0, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2.0, [p.friendCaptain, p.captain], p.effectName); }
     },
     870: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2.0, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2.0, [p.friendCaptain, p.captain], p.effectName); }
     },
     873: {
-        orb: function(p) {
-            if (window.specials[873].first) return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]);
-            else return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]);
-        },
-        type: "class",
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[873].multiplier, [p.friendCaptain, p.captain], p.effectName); },
         onActivation: function(p) {
-            window.specials[873].first = !window.specials[873].first;
+            var n = (window.specials[873].multiplier == 1.5 ? 1 : 0);
+            window.specials[873].multiplier = [1.5, 1.75][n];
             p.scope.notify({
-                text: (window.specials[873].first ?
-                    'Activating the first stage. To switch to the second stage, disable and re-enable this special' :
-                    'Activating the second stage. To switch to the first stage, disable and re-enable this special'),
+                text: 'Using the ' + [1.5, 1.75][n] + 'x Orb boost. To switch to the ' + [1.75, 1.5][n] + 'x Orb boost, disable and re-enable this special',
                 name: '873warning'
             });
         }
     },
     874: {
-        orb: function(p) {
-            if (window.specials[874].first) return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]);
-            else return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]);
-        },
-        type: "class",
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[874].multiplier, [p.friendCaptain, p.captain], p.effectName); },
         onActivation: function(p) {
-            window.specials[874].first = !window.specials[874].first;
+            var n = (window.specials[874].multiplier == 1.5 ? 1 : 0);
+            window.specials[874].multiplier = [1.5, 1.75][n];
             p.scope.notify({
-                text: (window.specials[874].first ?
-                    'Activating the first stage. To switch to the second stage, disable and re-enable this special' :
-                    'Activating the second stage. To switch to the first stage, disable and re-enable this special'),
+                text: 'Using the ' + [1.5, 1.75][n] + 'x Orb boost. To switch to the ' + [1.75, 1.5][n] + 'x Orb boost, disable and re-enable this special',
                 name: '874warning'
             });
         }
@@ -1174,10 +1164,10 @@ window.specials = {
         delay: function(p) { return 1; },
     },
     921: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     922: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     925: {
         atk: function(p) { return p.defenseDown ? 1.3 : 1; },
@@ -1237,7 +1227,7 @@ window.specials = {
         type: "class"
     },
     961: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.25, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.25, [p.friendCaptain, p.captain], p.effectName); }
     },
     963: {
         def: function(p) { return 0; }
@@ -1267,20 +1257,18 @@ window.specials = {
         }
     },
     975: {
-        atk: function(p) { return p.unit.class.has("야심") ? 1.3 : 1; },
-        atk: function(p) { return p.unit.class.has("타격") ? 1.3 : 1; },
+        atk: function(p) { return (p.unit.class.has("야심") || p.unit.class.has("타격")) ? 1.3 : 1; },
         type: "class"
     },
     976: {
-        atk: function(p) { return p.unit.class.has("야심") ? 1.3 : 1; },
-        atk: function(p) { return p.unit.class.has("타격") ? 1.3 : 1; },
+        atk: function(p) { return (p.unit.class.has("야심") || p.unit.class.has("타격")) ? 1.3 : 1; },
         type: "class"
     },
     977: {
-        chainAddition: function(p) {return 0.5;}
+        chainAddition: function(p) { return 0.5; }
     },
     978: {
-        chainAddition: function(p){ return 0.5;}
+        chainAddition: function(p) { return 0.5; }
     },
     984: {
         delay: function(p) { return 1; },
@@ -1312,7 +1300,7 @@ window.specials = {
         type: "type"
     },
     1013: {
-        atk: function(p) { return p.delayed ? 1.2 : 1; },
+        atk: function(p) { return p.delayed > 0 ? 1.2 : 1; },
         type: "condition",
     },
     1015: {
@@ -1336,7 +1324,7 @@ window.specials = {
         type: "class"
     },
     1024: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[1024].multiplier, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[1024].multiplier, [p.friendCaptain, p.captain], p.effectName); },
         onActivation: function(p) {
             var n = (p.percHP >= 70 ? 1.25 : p.percHP >= 30 ? 1.5 : 1.75);
             window.specials[1024].multiplier = n;
@@ -1347,7 +1335,7 @@ window.specials = {
         }
     },
     1025: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[1025].multiplier, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[1025].multiplier, [p.friendCaptain, p.captain], p.effectName); },
         onActivation: function(p) {
             var n = (p.percHP >= 70 ? 1.25 : p.percHP >= 30 ? 1.5 : 1.75);
             window.specials[1025].multiplier = n;
@@ -1416,10 +1404,10 @@ window.specials = {
         warning: "Selected special (%name%) assumes that the enemy has been STRONGLY Poisoned."
     },
     1059: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     1060: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     1061: {
         chain: function(p) { return 2; },
@@ -1433,7 +1421,7 @@ window.specials = {
         type: "class"
     },
     1065: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.25, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.25, [p.friendCaptain, p.captain], p.effectName); }
     },
     1066: {
         chainAddition: function(p){ return 0.1;}
@@ -1489,10 +1477,10 @@ window.specials = {
         }
     },
     1086: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     1087: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     1088: {
         atk: function(p) { return p.unit.class.has("참격") || p.unit.class.has("야심") ? 1.5 : 1},
@@ -1511,10 +1499,10 @@ window.specials = {
         type: "type"
     },
     1099: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     1100: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     1101: {
         atk: function(p) { return p.unit.type == "힘" || p.unit.type == "지능" ? 1.75 : 1; },
@@ -1541,10 +1529,10 @@ window.specials = {
         type: "class"
     },
     1111: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.25, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.25, [p.friendCaptain, p.captain], p.effectName); }
     },
     1112: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.25, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.25, [p.friendCaptain, p.captain], p.effectName); }
     },
     1113: {
         atk: function(p) { return 1.2; },
@@ -1561,12 +1549,12 @@ window.specials = {
     1122: {
         atk: function(p) { return p.slot == p.sourceSlot ? 2.25 : 1; },
         type: "type",
-        orb: function(p) { return p.slot == p.sourceSlot ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain])}
+        orb: function(p) { return p.slot == p.sourceSlot ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName)}
     },
     1123: {
         atk: function(p) { return p.slot == p.sourceSlot ? 2.25 : 1; },
         type: "type",
-        orb: function(p) { return p.slot == p.sourceSlot ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain])}
+        orb: function(p) { return p.slot == p.sourceSlot ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName)}
     },
     1132: {
         atk: function(p) { return p.unit.class.has("격투") || p.unit.class.has("사격")  ? window.specials[1132].multiplier : 1; },
@@ -1575,7 +1563,7 @@ window.specials = {
             var n = (window.specials[1132].multiplier == 1.5 ? 1 : 0);
             window.specials[1132].multiplier = [1.5, 1.75][n];
             p.scope.notify({
-                text: '공격력 ' + [1.5, 1.75][n] + '배 적용!  공격력을  ' + [1.75, 1.5][n] + '배로 적용하려면, 필살기를 다시 선택하세요.',
+                text: 'Using the ' + [1.5, 1.75][n] + 'x ATK multiplier. To switch to the ' + [1.75, 1.5][n] + 'x multiplier, disable and re-enable this special',
                 name: '1132warning'
             });
         }
@@ -1587,13 +1575,13 @@ window.specials = {
             var n = (window.specials[1133].multiplier == 1.5 ? 1 : 0);
             window.specials[1133].multiplier = [1.5, 1.75][n];
             p.scope.notify({
-                text: '공격력 ' + [1.5, 1.75][n] + '배 적용!  공격력을  ' + [1.75, 1.5][n] + '배로 적용하려면, 필살기를 다시 선택하세요.',
+                text: 'Using the ' + [1.5, 1.75][n] + 'x ATK multiplier. To switch to the ' + [1.75, 1.5][n] + 'x multiplier, disable and re-enable this special',
                 name: '1133warning'
             });
         }
     },
     1137: {
-        orb: function(p) { return p.unit.class.has("자유") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); }	
+        orb: function(p) { return p.unit.class.has("자유") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
     },
     1138: {
         atk: function(p) { return p.unit.class.has("강인") || p.unit.class.has("격투") ? 1.3 : 1},
@@ -1615,11 +1603,11 @@ window.specials = {
         type: "class"
     },
     1164: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); },
         rcv: function(p) { return 1.5; }
     },
     1165: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); },
         rcv: function(p) { return 1.5; }
     },
     1168: {
@@ -1693,10 +1681,10 @@ window.specials = {
         delay: function(p) { return 1; },
     },
     1211: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     1212: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     1219: {
         atk: function(p) {
@@ -1726,7 +1714,7 @@ window.specials = {
             window.specials[1220].stage = (window.specials[1220].stage + 1) % 3;
             p.scope.notify({
                 text: 'Activating stage #' + (window.specials[1220].stage + 1) + '. To move onto the next stage, disable and re-enable this special.',
-                name: '1219warning'
+                name: '1220warning'
             });
         }
     },
@@ -1884,10 +1872,10 @@ window.specials = {
         type: "class"
     },
     1254: {
-        def: function(p) { return 0.5; } //TODO: get correct value
+        def: function(p) { return 0.2; }
     },
     1255: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     1256: {
         atk: function(p) { return 1.3 },
@@ -1953,10 +1941,10 @@ window.specials = {
         }
     },
     1271: {
-        orb: function(p) { return p.unit.class.has("사격") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); }	
+        orb: function(p) { return p.unit.class.has("사격") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
     },
     1272: {
-        orb: function(p) { return p.unit.class.has("사격") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); }	
+        orb: function(p) { return p.unit.class.has("사격") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
     },
     1273: {
         atk: function(p) { return p.unit.class.has("격투") ? 1.5 : 1; },
@@ -1969,7 +1957,7 @@ window.specials = {
     1282: {
         atk: function(p) { return 1.2; },
         type: "class",
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.2, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.2, [p.friendCaptain, p.captain], p.effectName); },
     },
     1283: {
         atk: function(p) { return p.unit.class.has("야심") ? 1.5 : 1; },
@@ -2028,11 +2016,11 @@ window.specials = {
         type: "class"
     },
     1321: {
-        atk: function(p) { return p.delayed ? 1.5 : 1; },
+        atk: function(p) { return p.delayed > 0 ? 1.5 : 1; },
         type: "condition",
     },
     1322: {
-        atk: function(p) { return p.delayed ? 1.5 : 1; },
+        atk: function(p) { return p.delayed > 0 ? 1.5 : 1; },
         type: "condition",
     },
     1323: {
@@ -2103,7 +2091,7 @@ window.specials = {
     1348: {
         atk: function(p) { return 1.2; },
         type: "class",
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.2, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.2, [p.friendCaptain, p.captain], p.effectName); },
     },
     1349: {
         atk: function(p) { return p.unit.class.has("박식") ? 1.2 : 1; },
@@ -2117,10 +2105,10 @@ window.specials = {
         chainAddition: function(p){ return 0.5; }
     },
     1354: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); },
     },
     1355: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); },
     },
     1358: {
         delay: function(p) { return 1; },
@@ -2139,10 +2127,10 @@ window.specials = {
         type: "class",
     },
     1363: {
-        orb: function(p) { return p.unit.type == "마음" ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); },	
+        orb: function(p) { return p.unit.type == "마음" ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },	
     },
     1364: {
-        orb: function(p) { return p.unit.type == "마음" ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); },	
+        orb: function(p) { return p.unit.type == "마음" ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },	
     },
     1365: {
         delay: function(p) { return 1; },
@@ -2151,7 +2139,7 @@ window.specials = {
         delay: function(p) { return 1; },
     },
     1367:{
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[1367].multiplier, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[1367].multiplier, [p.friendCaptain, p.captain], p.effectName); },
         onActivation: function(p) {
             var n = (window.specials[1367].multiplier == 1.5 ? 1 : 0);
             window.specials[1367].multiplier = [1.5, 1.75][n];
@@ -2162,7 +2150,7 @@ window.specials = {
         },
     },
     1368:{
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[1368].multiplier, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[1368].multiplier, [p.friendCaptain, p.captain], p.effectName); },
         onActivation: function(p) {
             var n = (window.specials[1368].multiplier == 1.5 ? 1 : 0);
             window.specials[1368].multiplier = [1.5, 1.75][n];
@@ -2181,12 +2169,12 @@ window.specials = {
     1375: {
         atk: function(p) { return p.slot == p.sourceSlot ? 1.5 : 1; },
         type: "type",
-        orb: function(p) { return p.slot == p.sourceSlot ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain])}
+        orb: function(p) { return p.slot == p.sourceSlot ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName)}
     },
     1376: {
         atk: function(p) { return p.slot == p.sourceSlot ? 1.5 : 1; },
         type: "type",
-        orb: function(p) { return p.slot == p.sourceSlot ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain])}
+        orb: function(p) { return p.slot == p.sourceSlot ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName)}
     },
     1379: {
         turnedOn: false,
@@ -2196,7 +2184,7 @@ window.specials = {
         onDeactivation: function(p) {
             window.specials[1379].turnedOn = false;
         },
-        orb: function(p) { return (p.unit.class.has("자유") || p.unit.class.has("박식")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); }	
+        orb: function(p) { return (p.unit.class.has("자유") || p.unit.class.has("박식")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
     },
     1380: {
         turnedOn: false,
@@ -2206,13 +2194,13 @@ window.specials = {
         onDeactivation: function(p) {
             window.specials[1380].turnedOn = false;
         },
-        orb: function(p) { return (p.unit.class.has("자유") || p.unit.class.has("박식")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); }	
+        orb: function(p) { return (p.unit.class.has("자유") || p.unit.class.has("박식")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
     },
     1387: {
         delay: function(p) { return 1; },
     },
     1389: {
-        orb: function(p) { return p.unit.type == "지능" ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); },	
+        orb: function(p) { return p.unit.type == "지능" ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },	
     },
     1390: {
         atk: function(p) { return p.unit.cost <= 40 ? 1.75 : 1; },
@@ -2229,7 +2217,7 @@ window.specials = {
     1393: {
         atk: function(p) { return 1.1; },
         type: "class",
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.1, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.1, [p.friendCaptain, p.captain], p.effectName); },
     },
     1394: {
         atk: function(p) { return p.unit.class.has("격투") || p.unit.class.has("타격") ? 1.5 : 1; },
@@ -2284,13 +2272,13 @@ window.specials = {
     1405: {
         atk: function(p) { return p.unit.class.has("사격") ? 1.75 : 1; },
         type: "class",
-        orb: function(p) { return p.unit.class.has("사격") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return p.unit.class.has("사격") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
         warning: "Selected special (%name%) assumes that the enemy has Delay Protection."
     },
     1406: {
         atk: function(p) { return p.unit.class.has("사격") ? 1.75 : 1; },
         type: "class",
-        orb: function(p) { return p.unit.class.has("사격") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return p.unit.class.has("사격") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
         warning: "Selected special (%name%) assumes that the enemy has Delay Protection."
     },
     1407: {
@@ -2356,11 +2344,11 @@ window.specials = {
         }
     },
     1425: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); },
         warning: "Selected special (%name%) assumes that an ally has been inflicted with Bind."
     },
     1426: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); },
         warning: "Selected special (%name%) assumes that an ally has been inflicted with Bind."
     },
     1428: {
@@ -2383,14 +2371,14 @@ window.specials = {
         delay: function(p) { return 1; },
     },
     1437: {
-        atk: function(p) { return p.delayed ? 1.5 : 1; },
+        atk: function(p) { return p.delayed > 0 ? 1.5 : 1; },
         type: "condition",
-        orb: function(p) { return p.unit.class.has("강인") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return p.unit.class.has("강인") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
     },
     1438: {
-        atk: function(p) { return p.delayed ? 1.5 : 1; },
+        atk: function(p) { return p.delayed > 0 ? 1.5 : 1; },
         type: "condition",
-        orb: function(p) { return p.unit.class.has("강인") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return p.unit.class.has("강인") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
     },
     1439: {
         atk: function(p) { return p.unit.class.has("강인") ? 1.75 : 1; },
@@ -2417,12 +2405,12 @@ window.specials = {
     1443: {
         atk: function(p) { return p.unit.class.has("강인") ? 1.5 : 1; },
         type: "class",
-        orb: function(p) { return p.unit.class.has("강인") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return p.unit.class.has("강인") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
     },
     1444: {
         atk: function(p) { return p.unit.class.has("강인") ? 1.5 : 1; },
         type: "class",
-        orb: function(p) { return p.unit.class.has("강인") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return p.unit.class.has("강인") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
     },
     1445: {
         delay: function(p) { return 1; },
@@ -2554,10 +2542,10 @@ window.specials = {
         }
     },
     1486: {
-        orb: function(p) { return (p.unit.class.has("격투")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); }	
+        orb: function(p) { return (p.unit.class.has("격투")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
     },
     1487: {
-        orb: function(p) { return (p.unit.class.has("격투")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); }	
+        orb: function(p) { return (p.unit.class.has("격투")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
     },
     1490: {
         def: function(p) { return 0.5; }
@@ -2565,7 +2553,7 @@ window.specials = {
     1491: {
         def: function(p) { return 0.5; }
     },
-    1492: {//CHANGE THIS IF THIS ISN'T SABO
+    1492: {
         atk: function(p) { return !p.unit.class.has('자유') ? 1 : window.specials[1492].multiplier; },
         type: "class",
         onActivation: function(p) {
@@ -2636,10 +2624,10 @@ window.specials = {
         }
     },
     1517: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName); }
     },
     1518: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName); }
     },
     1522: {
         atk: function(p) { return p.slot == p.sourceSlot ? 1.75 : 1; },
@@ -2647,7 +2635,7 @@ window.specials = {
     },
     1525: {
         delay: function(p) { return 1; },
-        atk: function(p) { return p.delayed ? 1.3 : 1; },
+        atk: function(p) { return p.delayed > 0 ? 1.3 : 1; },
         type: "condition",
     },
     1526: {
@@ -2686,7 +2674,7 @@ window.specials = {
         }
     },
     1529: {
-        orb: function(p) { return (p.unit.class.has("참격")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[1529].multiplier, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return (p.unit.class.has("참격")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[1529].multiplier, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
         onActivation: function(p) {
             var n = (p.percHP >= 50 ? 2.25 : 2);
             window.specials[1529].multiplier = n;
@@ -2697,7 +2685,7 @@ window.specials = {
         }
     },
     1530: {
-        orb: function(p) { return (p.unit.class.has("참격")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[1530].multiplier, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return (p.unit.class.has("참격")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[1530].multiplier, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
         onActivation: function(p) {
             var n = (p.percHP >= 50 ? 2.25 : 2);
             window.specials[1530].multiplier = n;
@@ -2803,12 +2791,12 @@ window.specials = {
     },
     1554: {
         atk: function(p) { return p.unit.type == "기술" ? 1.35 : 1; },
-        orb: function(p) { return p.unit.type == "기술" ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.35, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return p.unit.type == "기술" ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.35, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
         type: "type",
     },
     1555: {
         atk: function(p) { return p.unit.type == "기술" ? 1.35 : 1; },
-        orb: function(p) { return p.unit.type == "기술" ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.35, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return p.unit.type == "기술" ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.35, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
         type: "type",
     },
     1556: {
@@ -2840,10 +2828,10 @@ window.specials = {
         chainAddition: function(p) { return 0.3; }
     },
     1567: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     1568: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     1570: {
         staticMult: function(p) { return 80; }
@@ -2888,10 +2876,10 @@ window.specials = {
         }
     },
     1580: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     1581: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     1582: {
         atk: function(p) { return p.unit.class.has("박식") ? 1.5 : 1; },
@@ -2899,7 +2887,7 @@ window.specials = {
         type: "class"
     },
     1583:{
-        orb: function(p) { return (p.unit.class.has("타격")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[1583].multiplier, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return (p.unit.class.has("타격")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[1583].multiplier, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
         onActivation: function(p) {
             var n = (window.specials[1583].multiplier == 1.5 ? 1 : 0);
             window.specials[1583].multiplier = [1.5, 2][n];
@@ -2910,7 +2898,7 @@ window.specials = {
         },
     },
     1584:{
-        orb: function(p) { return (p.unit.class.has("타격")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[1584].multiplier, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return (p.unit.class.has("타격")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[1584].multiplier, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
         onActivation: function(p) {
             var n = (window.specials[1584].multiplier == 1.5 ? 1 : 0);
             window.specials[1584].multiplier = [1.5, 2][n];
@@ -2964,10 +2952,10 @@ window.specials = {
         }
     },
     1594: {
-        orb: function(p) { return (p.unit.class.has("강인")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); }	
+        orb: function(p) { return (p.unit.class.has("강인")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
     },
     1595: {
-        orb: function(p) { return (p.unit.class.has("강인")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); }	
+        orb: function(p) { return (p.unit.class.has("강인")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
     },
     1598: {
         atk: function(p) { return 1.2 },
@@ -2977,7 +2965,7 @@ window.specials = {
         def: function(p) { return 0.5 },
     },
     1600: {
-        orb: function(p) { return (p.unit.type == "지능" || p.unit.type == "마음") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); },	
+        orb: function(p) { return (p.unit.type == "지능" || p.unit.type == "마음") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },	
     },
     1603: {
         delay: function(p) { return 1; },
@@ -2992,21 +2980,21 @@ window.specials = {
     },
     1613: {
         def: function(p) { return 0.5 },
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName); }
     },
     1614: {
         def: function(p) { return 0.5 },
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName); }
     },
     1615: {
         atk: function(p) { return p.unit.class.has("타격") ? 1.5 : 1; },
         type: "class",
-        orb: function(p) { return p.unit.class.has("타격") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); }	
+        orb: function(p) { return p.unit.class.has("타격") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
     },
     1616: {
         atk: function(p) { return p.unit.class.has("타격") ? 1.5 : 1; },
         type: "class",
-        orb: function(p) { return p.unit.class.has("타격") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); }	
+        orb: function(p) { return p.unit.class.has("타격") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
     },
     1617: {
         atk: function(p) { return p.unit.type == "힘" || p.unit.type == "지능" || p.unit.type == "기술" ? 1.75 : 1; },
@@ -3028,10 +3016,10 @@ window.specials = {
         type: "class",
     },
     1622: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName); }
     },
     1623: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName); }
     },
     1626: {
         atk: function(p) { return p.unit.type == "마음" ? 1.5 : 1; },
@@ -3068,7 +3056,7 @@ window.specials = {
         type: "class",
     },
     1633: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.25, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.25, [p.friendCaptain, p.captain], p.effectName); }
     },
     1636: {
         atk: function(p) { return 1.3; },
@@ -3099,7 +3087,7 @@ window.specials = {
         type: "class",
     },
     1650: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     1651: {
         turnedOn: false,
@@ -3120,10 +3108,10 @@ window.specials = {
         }
     },
     1653: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName); }
     },
     1654: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName); }
     },
     1655: {
         atk: function(p) { return p.unit.type == "속도" ? 2 : 1; },
@@ -3170,7 +3158,7 @@ window.specials = {
         type: "class",
     },
     1666: {
-        orb: function(p) { return (p.unit.class.has("강인") || p.unit.class.has("타격")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[1666].multiplier, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return (p.unit.class.has("강인") || p.unit.class.has("타격")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[1666].multiplier, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
         onActivation: function(p) {
             var n = (p.percHP <= 70 ? 1 : 1.5);
             window.specials[1666].multiplier = n;
@@ -3181,7 +3169,7 @@ window.specials = {
         }
     },
     1667: {
-        orb: function(p) { return (p.unit.class.has("강인") || p.unit.class.has("타격")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[1667].multiplier, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return (p.unit.class.has("강인") || p.unit.class.has("타격")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[1667].multiplier, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
         onActivation: function(p) {
             var n = (p.percHP <= 70 ? 1 : 1.5);
             window.specials[1667].multiplier = n;
@@ -3203,7 +3191,7 @@ window.specials = {
         delay: function(p) { return 1; },
     },
     1671: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     1673: {
         def: function(p) { return 0.1; }
@@ -3286,18 +3274,18 @@ window.specials = {
     1693: {
         atk: function(p) { return p.slot == p.sourceSlot ? 1.75 : 1; },
         type: "type",
-        orb: function(p) { return p.slot == p.sourceSlot ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain])}
+        orb: function(p) { return p.slot == p.sourceSlot ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName)}
     },
     1694: {
         atk: function(p) { return p.slot == p.sourceSlot ? 1.75 : 1; },
         type: "type",
-        orb: function(p) { return p.slot == p.sourceSlot ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain])}
+        orb: function(p) { return p.slot == p.sourceSlot ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName)}
     },
     1695: {
-        orb: function(p) { return (p.unit.class.has("타격")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); }	
+        orb: function(p) { return (p.unit.class.has("타격")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
     },
     1696: {
-        orb: function(p) { return (p.unit.class.has("타격")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); }	
+        orb: function(p) { return (p.unit.class.has("타격")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
     },
     1699: {
         chainAddition: function(p) { return 0.3; }
@@ -3319,18 +3307,19 @@ window.specials = {
         def: function(p) { return 0; }
     },
     1710: {
-        orb: function(p) { return (p.unit.class.has("박식")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); }	
+        orb: function(p) { return (p.unit.class.has("박식")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
     },
     1711: {
-        orb: function(p) { return (p.unit.class.has("박식")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); }	
+        orb: function(p) { return (p.unit.class.has("박식")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
     },
     1712: {
-        orb: function(p) { return (p.unit.class.has("야심")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); }	
+        orb: function(p) { return (p.unit.class.has("야심")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
     },
     1713: {
-        orb: function(p) { return (p.unit.class.has("야심")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); }	
+        orb: function(p) { return (p.unit.class.has("야심")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
     },
     1716: {
+        delay: function(p) { return 1; },
         atk: function(p) { return p.unit.class.has("야심") ? window.specials[1716].multiplier : 1; },
         type: "class",
         onActivation: function(p) {
@@ -3364,7 +3353,7 @@ window.specials = {
         atk: function(p) { return p.unit.class.has("타격") ? window.specials[1722].multiplier : 1; },
         type: "type",
         onActivation: function(p) {
-            var n = (p.percHP <= 30 ? 1.5 : 1);
+            var n = (p.percHP <= 50 ? 1.5 : 1);
             window.specials[1722].multiplier = n;
             p.scope.notify({
                 text: 'Using the ' + n + 'x multiplier.',
@@ -3376,7 +3365,7 @@ window.specials = {
         atk: function(p) { return p.unit.class.has("타격") ? window.specials[1723].multiplier : 1; },
         type: "type",
         onActivation: function(p) {
-            var n = (p.percHP <= 30 ? 1.5 : 1);
+            var n = (p.percHP <= 50 ? 1.5 : 1);
             window.specials[1723].multiplier = n;
             p.scope.notify({
                 text: 'Using the ' + n + 'x multiplier.',
@@ -3397,12 +3386,12 @@ window.specials = {
         staticMult: function(p) { return 55; }
     },
     1732: {
-        atk: function(p) { return p.unit.class.has("타격") || p.unit.class.has("강인") ? 1.75 : 1},
+        atk: function(p) { return p.unit.class.has("타격") || p.unit.class.has("강인") ? 1.75 : 1; },
         warning: "Selected special (%name%) assumes that the enemy has Delay Protection.",
         type: "class"
     },
     1733: {
-        atk: function(p) { return p.unit.class.has("타격") || p.unit.class.has("강인") ? 1.75 : 1},
+        atk: function(p) { return p.unit.class.has("타격") || p.unit.class.has("강인") ? 1.75 : 1; },
         warning: "Selected special (%name%) assumes that the enemy has Delay Protection.",
         type: "class"
     },
@@ -3413,10 +3402,10 @@ window.specials = {
         delay: function(p) { return 1; },
     },
     1738: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName); }
     },
     1739: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName); }
     },
     1740: {
         def: function(p) { return .2; },
@@ -3437,10 +3426,10 @@ window.specials = {
         type: "condition"
     },
     1744: {
-        orb: function(p) { return (p.unit.class.has("사격")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); }	
+        orb: function(p) { return (p.unit.class.has("사격")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
     },
     1745: {
-        orb: function(p) { return (p.unit.class.has("사격")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); }	
+        orb: function(p) { return (p.unit.class.has("사격")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
     },
     1746: {
         delay: function(p) { return 1; },
@@ -3463,24 +3452,24 @@ window.specials = {
         }
     },
     1750:{
-        orb: function(p) { return (p.unit.class.has("타격")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[1750].multiplier, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return (p.unit.class.has("타격")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[1750].multiplier, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
         onActivation: function(p) {
             var n = (window.specials[1750].multiplier == 1.75 ? 1 : 0);
             window.specials[1750].multiplier = [1.75, 2.25][n];
             p.scope.notify({
                 text: 'Using the ' + [1.75, 2.25][n] + 'x Orb boost. To switch to the ' + [2.25, 1.75][n] + 'x Orb boost, disable and re-enable this special',
-                name: '1584warning'
+                name: '1750warning'
             });
         },
     },
     1751:{
-        orb: function(p) { return (p.unit.class.has("타격")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[1751].multiplier, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return (p.unit.class.has("타격")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[1751].multiplier, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
         onActivation: function(p) {
             var n = (window.specials[1751].multiplier == 1.75 ? 1 : 0);
             window.specials[1751].multiplier = [1.75, 2.25][n];
             p.scope.notify({
                 text: 'Using the ' + [1.75, 2.25][n] + 'x Orb boost. To switch to the ' + [2.25, 1.75][n] + 'x Orb boost, disable and re-enable this special',
-                name: '1584warning'
+                name: '1751warning'
             });
         },
     },
@@ -3509,10 +3498,10 @@ window.specials = {
         }
     },
     1754: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName); }
     },
     1755: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName); }
     },
     1758: {
         delay: function(p) { return 1; },
@@ -3545,25 +3534,25 @@ window.specials = {
     },
     1769: {
         delay: function(p) { return 1; },
-        atk: function(p) { return (p.delayed && p.captain.class.has("박식")) ? 1.5 : 1; },
+        atk: function(p) { return (p.delayed > 0 && p.captain.class.has("박식")) ? 1.5 : 1; },
         type: "condition",
     },
     1770: {
         delay: function(p) { return 1; },
-        atk: function(p) { return (p.delayed && p.captain.class.has("박식")) ? 1.5 : 1; },
+        atk: function(p) { return (p.delayed > 0 && p.captain.class.has("박식")) ? 1.5 : 1; },
         type: "condition",
     },
     1771: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName); }
     },
     1772: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName); }
     },
     1773: {
-        orb: function(p) { return p.unit.class.has("자유") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); }	
+        orb: function(p) { return p.unit.class.has("자유") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
     },
     1774: {
-        orb: function(p) { return p.unit.class.has("자유") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); }	
+        orb: function(p) { return p.unit.class.has("자유") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
     },
     1777: {
         chainAddition: function(p){ return 0.2;}
@@ -3577,24 +3566,28 @@ window.specials = {
     1780: {
         chainAddition: function(p){ return 0.5;}
     },
+    1781: {
+        atk: function(p) { return p.slot == p.sourceSlot ? 1.3 : 1; },
+        type: "type"
+    },
     1782: {
         delay: function(p) { return 1; },
     },
     1783: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     1784: {
         atk: function(p) { return 1.5; },
         type: "type"
     },
     1785: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.25, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.25, [p.friendCaptain, p.captain], p.effectName); }
     },
     1791: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName); }
     },
     1792: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName); }
     },
     1793: {
         atk: function(p) { return !(p.unit.type == "힘" || p.unit.type == "기술" || p.unit.type == "속도") ? 1 : window.specials[1793].multiplier; },
@@ -3627,11 +3620,11 @@ window.specials = {
         delay: function(p) { return 1; },
     },
     1797: {
-        atk: function(p) { return p.delayed ? 1.5 : 1; },
+        atk: function(p) { return p.delayed > 0 ? 1.5 : 1; },
         type: "condition",
     },
     1798: {
-        atk: function(p) { return p.delayed ? 1.5 : 1; },
+        atk: function(p) { return p.delayed > 0 ? 1.5 : 1; },
         type: "condition",
     },
     1799: {
@@ -3650,11 +3643,11 @@ window.specials = {
     },
     1805: {
 		def: function(p) { return 0.0; },
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     1806: {
 		def: function(p) { return 0.0; },
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); },
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
     },
     1807: {
         turnedOn: [ false, false ],
@@ -3664,12 +3657,12 @@ window.specials = {
         onDeactivation: function(p) {
             window.specials[1807].turnedOn[p.slot] = false;
         },
-        chain: function(p) { return p.captain.class.has("참격") ? 2.75 : 1; },
+        chain: function(p) { return p.captain.class.has("참격") ? 2.75 : 1; },
         chainLimiter: function(p) {
             var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
             return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? 2.75 : 1;
         },
-        orb: function(p) { return p.unit.class.has("참격") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); }	
+        orb: function(p) { return p.unit.class.has("참격") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
     },
     1808: {
         turnedOn: [ false, false ],
@@ -3679,22 +3672,21 @@ window.specials = {
         onDeactivation: function(p) {
             window.specials[1808].turnedOn[p.slot] = false;
         },
-        chain: function(p) { return p.captain.class.has("참격") ? 2.75 : 1; },
+        chain: function(p) { return p.captain.class.has("참격") ? 2.75 : 1; },
         chainLimiter: function(p) {
             var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
             return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? 2.75 : 1;
         },
-        orb: function(p) { return p.unit.class.has("참격") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); }	
+        orb: function(p) { return p.unit.class.has("참격") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
     },
-     1811: {
-        atk: function(p) { return p.unit.class.has("격투") ? 1.5 : 1; },
+    1811: {
+        atk: function(p) { return p.unit.class.has("격투") ? 1.5 : 1; },
         type: "class"
     },
     1812: {
-        atk: function(p) { return p.unit.class.has("격투") ? 1.5 : 1; },
+        atk: function(p) { return p.unit.class.has("격투") ? 1.5 : 1; },
         type: "class"
     },
-
     1813: {
         atk: function(p) { return p.slot == 1 ? 1.5 : 1; },
         type: "class"
@@ -3711,7 +3703,7 @@ window.specials = {
         atk: function(p) { return p.unit.class.has("사격") ? 2 : 1; },
         type: "class"
     },
-     1817: {
+    1817: {
         atk: function(p) { return p.slot > 1 ? 1.2 : 1; },
         type: "class"
     },
@@ -3719,16 +3711,16 @@ window.specials = {
         atk: function(p) { return p.slot > 1 ? 1.2 : 1; },
         type: "class"
     },
-	    1819: {
+    1819: {
         atk: function(p) { return p.slot == p.sourceSlot ? 1.75 : 1; },
         type: "type"
     },
     1825: {
-        affinity: function(p){ return p.unit.type == "지능" ? 1.75 : 1; }
+        affinity: function(p){ return p.unit.type == "지능" ? 1.75 : 1; }
     },
     1826: {
-        affinity: function(p){ return p.unit.type == "지능" ? 1.75 : 1; }
-    },  
+        affinity: function(p){ return p.unit.type == "지능" ? 1.75 : 1; }
+    },
     1827: {
         atk: function(p) { return p.unit.type == "지능" ? 2 : 1; },
         type: "type"
@@ -3737,62 +3729,1438 @@ window.specials = {
         atk: function(p) { return p.unit.type == "지능" ? 2 : 1; },
         type: "type"
     },
-1829: {
-        orb: function(p) { return (p.unit.class.has("야심") || p.unit.class.has("박식")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); }	
+    1829: {
+        orb: function(p) { return (p.unit.class.has("야심") || p.unit.class.has("박식")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
     },
     1830: {
-        orb: function(p) { return (p.unit.class.has("야심") || p.unit.class.has("박식")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); }	
+        orb: function(p) { return (p.unit.class.has("야심") || p.unit.class.has("박식")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
     },
     1831: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName); }
     },
     1832: {
-        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain]); }
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName); }
     },
     1835: {
-        chain: function(p) { return (p.captain.type == "힘" || p.captain.type == "마음") ? 2.5 : 1; },
+        chain: function(p) { return (p.captain.type == "힘" || p.captain.type == "마음") ? 2.5 : 1; },
         chainLimiter: function(p) {
             var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
             return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? 2.5 : 1;
         },
-        delay: function(p) { return p.captain.class.has("강인") ? 1 : 0; },
+        delay: function(p) { return p.captain.class.has("강인") ? 1 : 0; },
     },
     1836: {
-        chain: function(p) { return (p.captain.type == "힘" || p.captain.type == "마음") ? 2.5 : 1; },
+        chain: function(p) { return (p.captain.type == "힘" || p.captain.type == "마음") ? 2.5 : 1; },
         chainLimiter: function(p) {
             var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
             return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? 2.5 : 1;
         },
-        delay: function(p) { return p.captain.class.has("강인") ? 1 : 0; },
+        delay: function(p) { return p.captain.class.has("강인") ? 1 : 0; },
     },
     1837: {
-        atk: function(p) { return (p.captain.type == "속도" || p.captain.type == "마음") ? 1.75 : 1; },
+        atk: function(p) { return (p.captain.type == "속도" || p.captain.type == "마음") ? 1.75 : 1; },
         type: "class",
     },
     1838: {
-        atk: function(p) { return (p.captain.type == "속도" || p.captain.type == "마음") ? 1.75 : 1; },
+        atk: function(p) { return (p.captain.type == "속도" || p.captain.type == "마음") ? 1.75 : 1; },
         type: "class",
     },
     1839: {
-        atk: function(p) { return (p.delayed > 0 && (p.captain.type == "기술" || p.captain.type == "마음")) ? 1.75 : 1; },
+        atk: function(p) { return (p.delayed > 0 && (p.captain.type == "기술" || p.captain.type == "마음")) ? 1.75 : 1; },
         type: "condition",
-        staticMult: function(p) { return p.captain.class.has("강인") ? 40 : 0; }
+        staticMult: function(p) { return p.captain.class.has("강인") ? 40 : 0; }
     },
     1840: {
-        atk: function(p) { return (p.delayed > 0 && (p.captain.type == "기술" || p.captain.type == "마음")) ? 1.75 : 1; },
+        atk: function(p) { return (p.delayed > 0 && (p.captain.type == "기술" || p.captain.type == "마음")) ? 1.75 : 1; },
         type: "condition",
-        staticMult: function(p) { return p.captain.class.has("강인") ? 40 : 0; }
+        staticMult: function(p) { return p.captain.class.has("강인") ? 40 : 0; }
+    },
+    1841: {
+        atk: function(p) { return p.unit.class.has("야심") ? 1.5 : 1; },
+        type: "class"
+    },
+    1842: {
+        atk: function(p) { return p.unit.class.has("야심") ? 1.5 : 1; },
+        type: "class"
+    },
+    1845: {
+        def: function(p) { return 0; }
+    },
+    1846: {
+        def: function(p) { return 0; }
     },
     1847: {
         atk: function(p) { return 1.5; },
         type: "type"
     },
-    2000: {
+    1850: {
+        chainAddition: function(p) { return 0.5; }
+    },
+    1851: {
+        chainAddition: function(p) { return 0.5; }
+    },
+    1852: {
+        atk: function(p) { return p.slot == p.sourceSlot ? 2.25 : 1; },
+        type: "type",
+        warning: "Selected special (%name%) assumes that the enemy has Delay Protection AND a Barrier active.",
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName); }
+    },
+    1853: {
+        atk: function(p) { return p.slot == p.sourceSlot ? 2.25 : 1; },
+        type: "type",
+        warning: "Selected special (%name%) assumes that the enemy has Delay Protection AND a Barrier active.",
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName); }
+    },
+    1854: {
+        atk: function(p) { return p.unit.class.has("자유") ? 1.5 : 1; },
+        type: "class",
+        orb: function(p) { return p.unit.class.has("자유") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
+    },
+    1855: {
+        atk: function(p) { return p.unit.class.has("자유") ? 1.5 : 1; },
+        type: "class",
+        orb: function(p) { return p.unit.class.has("자유") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
+    },
+    1856: {
+        affinity: function(p){ return p.unit.class.has("강인") ? 1.25 : 1; }
+    },
+    1857: {
+        affinity: function(p){ return p.unit.class.has("강인") ? 1.25 : 1; }
+    },
+    1858: {
+        staticMult: function(p) { return 65; }
+    },
+    1859: {
+        staticMult: function(p) { return 65; }
+    },
+    1860: {
+        atk: function(p) { return (p.delayed > 0 && (p.captain.class.has("사격"))) ? 1.75 : 1; },
+        type: "condition",
+    },
+    1861: {
+        atk: function(p) { return (p.delayed > 0 && (p.captain.class.has("사격"))) ? 1.75 : 1; },
+        type: "condition",
+    },
+    1864: {
+        atk: function(p) { return p.unit.class.has("타격") ? window.specials[1864].multiplier : 1; },
+        type: "class",
+        onActivation: function(p) {
+            var n = (window.specials[1864].multiplier === 1.5 ? 1 : 0);
+            window.specials[1864].multiplier = [1.5, 1.75][n];
+            p.scope.notify({
+                text: 'Using the ' + [1.5, 1.75][n] + 'x ATK multiplier. To switch to the ' + [1.75, 1.5][n] + 'x multiplier, disable and re-enable this special',
+                name: '1864warning'
+            });
+        }
+    },
+    1865: {
+        atk: function(p) { return p.unit.class.has("타격") ? window.specials[1865].multiplier : 1; },
+        type: "class",
+        onActivation: function(p) {
+            var n = (window.specials[1865].multiplier === 1.5 ? 1 : 0);
+            window.specials[1865].multiplier = [1.5, 1.75][n];
+            p.scope.notify({
+                text: 'Using the ' + [1.5, 1.75][n] + 'x ATK multiplier. To switch to the ' + [1.75, 1.5][n] + 'x multiplier, disable and re-enable this special',
+                name: '1865warning'
+            });
+        }
+    },
+    1868: {
+        delay: function(p) { return 1; },
+    },
+    1869: {
+        delay: function(p) { return 1; },
+    },
+    1872: {
+        atk: function(p) { return p.unit.class.has("참격") ? 1.75 : 1; },
+        type: "class"
+    },
+    1873: {
+        atk: function(p) { return p.unit.class.has("참격") ? 1.75 : 1; },
+        type: "class"
+    },
+    1874: {
+        chainAddition: function(p){ return 0.5; }
+    },
+    1875: {
+        chainAddition: function(p){ return 0.5; }
+    },
+    1878: {
+        turnedOn: [ false, false ],
+        onActivation: function(p) {
+            window.specials[1878].turnedOn[p.slot] = true;
+            p.scope.notify({
+                text: 'Only affects damage if Bartolomeo is your captain',
+                name: '1878warning'
+            });
+        },
+        onDeactivation: function(p) {
+            window.specials[1878].turnedOn[p.slot] = false;
+        }
+    },
+    1879: {
+        turnedOn: [ false, false ],
+        onActivation: function(p) {
+            window.specials[1879].turnedOn[p.slot] = true;
+            p.scope.notify({
+                text: 'Only affects damage if Bartolomeo is your captain',
+                name: '1879warning'
+            });
+        },
+        onDeactivation: function(p) {
+            window.specials[1879].turnedOn[p.slot] = false;
+        }
+    },
+    1882: {
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName); },
+        chain: function(p) { return 3; },
+        chainLimiter: function(p) {
+            var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
+            return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? 3 : 1;
+        }
+    },
+    1883: {
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName); },
+        chain: function(p) { return 3; },
+        chainLimiter: function(p) {
+            var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
+            return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? 3 : 1;
+        }
+    },
+    1884: {
+        delay: function(p) { return 1; },
+    },
+    1885: {
+        delay: function(p) { return 1; },
+    },
+    1886: {
+        atk: function(p) { return p.delayed > 0 ? 1.5 : 1; },
+        type: "condition",
+    },
+    1887: {
+        atk: function(p) { return p.delayed > 0 ? 1.5 : 1; },
+        type: "condition",
+    },
+    1888: {
+        atk: function(p) { return p.unit.class.has("야심") ? 1.75 : 1; },
+        type: "class",
+        orb: function(p) { return p.unit.class.has("야심") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
+    },
+    1889: {
+        atk: function(p) { return p.unit.class.has("야심") ? 1.75 : 1; },
+        type: "class",
+        orb: function(p) { return p.unit.class.has("야심") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
+    },
+    1892: {
+        delay: function(p) { return 1; },
+    },
+    1893: {
+        delay: function(p) { return 1; },
+    },
+    1894: {
+        atk: function(p) { return p.unit.class.has("격투") ? window.specials[1894].multiplier : 1; },
+        type: "type",
+        onActivation: function(p) {
+            var n = (p.percHP <= 50 ? 2 : 1);
+            window.specials[1894].multiplier = n;
+            p.scope.notify({
+                text: 'Using the ' + n + 'x ATK boost.',
+                name: '1894warning'
+            });
+        }
+    },
+    1895: {
+        atk: function(p) { return p.unit.class.has("격투") ? window.specials[1895].multiplier : 1; },
+        type: "type",
+        onActivation: function(p) {
+            var n = (p.percHP <= 50 ? 2 : 1);
+            window.specials[1895].multiplier = n;
+            p.scope.notify({
+                text: 'Using the ' + n + 'x ATK boost.',
+                name: '1895warning'
+            });
+        }
+    },
+    1896: {
+        chainAddition: function(p) { return p.captain.class.has("야심") ? window.specials[1896].multiplier : 0; },
+        onActivation: function(p) {
+            var n = (window.specials[1896].multiplier == .3 ? 1 : 0);
+            window.specials[1896].multiplier = [.3, .7][n];
+            p.scope.notify({
+                text: 'Using the ' + [.3, .7][n] + 'x chain boost multiplier. To switch to the ' + [.7, .3][n] + 'x multiplier, disable and re-enable this special',
+                name: '1896warning'
+            });
+        },
+    },
+    1897: {
+        chainAddition: function(p) { return p.captain.class.has("야심") ? window.specials[1897].multiplier : 0; },
+        onActivation: function(p) {
+            var n = (window.specials[1897].multiplier == .3 ? 1 : 0);
+            window.specials[1897].multiplier = [.3, .7][n];
+            p.scope.notify({
+                text: 'Using the ' + [.3, .7][n] + 'x chain boost multiplier. To switch to the ' + [.7, .3][n] + 'x multiplier, disable and re-enable this special',
+                name: '1897warning'
+            });
+        },
+    },
+    1900: {
+        atk: function(p) { return p.slot == p.sourceSlot ? 1.5 : 1; },
+        type: "type"
+    },
+    1905: {
+        orb: function(p) { return (p.unit.class.has("야심")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
+    },
+    1906: {
+        orb: function(p) { return (p.unit.class.has("야심")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
+    },
+    1907: {
+        atk: function(p) { return p.classCount.야심 == 6 ? p.unit.class.has("야심") ? 2 : 1 : 1; },
+        type: "class",
+    },
+    1908: {
+        atk: function(p) { return p.classCount.야심 == 6 ? p.unit.class.has("야심") ? 2 : 1 : 1; },
+        type: "class",
+    },
+    1913: {
+        orb: function(p) { return (p.unit.class.has("자유") || p.unit.class.has("박식")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
+    },
+    1914: {
+        orb: function(p) { return (p.unit.class.has("자유") || p.unit.class.has("박식")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
+    },
+    1915: {
+        affinity: function(p){ return 1.75; }
+    },
+    1916: {
+        affinity: function(p){ return 1.75; }
+    },
+    1917: {
+        atk: function(p) { return p.unit.type == "힘" ? 1.75 : 1; },
+        type: "type"
+    },
+    1918: {
+        atk: function(p) { return p.unit.type == "힘" ? 1.75 : 1; },
+        type: "type"
+    },
+    1921: {
+        atk: function(p) { return !p.unit.class.has('참격') ? 1 : p.sourceSlot < 2 ? 2 : 1.75 ; },
+        type: "class",
+        chain: function(p) { return p.sourceSlot > 1 ? 2.5 : 1; },
+        chainLimiter: function(p) {
+            if (p.sourceSlot > 1){
+                var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
+                return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? 2.5 : 1;
+            }
+            else{
+                var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
+                return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? Infinity : 1;
+            }
+        },
+    },
+    1922: {
+        orb: function(p) { return p.unit.class.has("박식") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2.25, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }
+    },
+    1923: {
         atk: function(p) { return 1.75; },
         type: "class"
     },
-    2001: {
+    1924: {
         atk: function(p) { return 1.75; },
         type: "class"
+    },
+    1925: {
+        atk: function(p) { return p.unit.class.has("야심") ? 1.75 : 1; },
+        type: "class",
+    },
+    1926: {
+        atk: function(p) { return p.unit.class.has("야심") ? 1.75 : 1; },
+        type: "class",
+    },
+    1927: {
+        atk: function(p) { return p.unit.class.has("박식") ? 2 : 1; },
+        type: "type"
+    },
+    1928: {
+        atk: function(p) { return (p.unit.class.has("타격") || p.unit.class.has("야심")) ? 1.5 : 1; },
+        type: "class",
+        orb: function(p) { return (p.unit.class.has("타격") || p.unit.class.has("야심")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
+    },
+    1929: {
+        atk: function(p) { return p.unit.type == "기술" ? 2 : 1; },
+        type: "type"
+    },
+    1930: {
+        atk: function(p) { return p.unit.type == "기술" ? 2 : 1; },
+        type: "type"
+    },
+    1931: {
+        chainAddition: function(p) { return 0.25; },
+        atk: function(p) { return !p.unit.class.has('격투') ? 1 : window.specials[1931].multiplier; },
+        type: "class",
+        turnedOn: false,
+        onActivation: function(p) {
+            window.specials[1931].turnedOn = true;
+            var n = (window.specials[1933].turnedOn ? 1 : 0);
+            window.specials[1931].multiplier = [1.5, 1.75][n];
+            p.scope.notify({
+                text: 'Using the ' + [1.5, 1.75][n] + 'x ATK multiplier. To switch to the ' + [1.75, 1.5][n] + 'x multiplier, Switch the order of the specials needed.',
+                name: '1931warning'
+            });
+        },
+        onDeactivation: function(p) {
+            window.specials[1931].turnedOn = false;
+        },
+    },
+    1932: {
+        orb: function(p) { return (p.unit.class.has("격투")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.25, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
+        atk: function(p) { return !p.unit.class.has('격투') ? 1 : window.specials[1932].multiplier; },
+        type: "class",
+        turnedOn: false,
+        onActivation: function(p) {
+            window.specials[1932].turnedOn = true;
+            var n = (window.specials[1931].turnedOn ? 1 : 0);
+            window.specials[1932].multiplier = [1.5, 1.75][n];
+            p.scope.notify({
+                text: 'Using the ' + [1.5, 1.75][n] + 'x ATK multiplier. To switch to the ' + [1.75, 1.5][n] + 'x multiplier, Switch the order of the specials needed.',
+                name: '1932warning'
+            });
+        },
+        onDeactivation: function(p) {
+            window.specials[1932].turnedOn = false;
+        },
+    },
+    1933: {
+        atk: function(p) { return !p.unit.class.has('격투') ? 1 : window.specials[1933].multiplier; },
+        type: "class",
+        turnedOn: false,
+        onActivation: function(p) {
+            window.specials[1933].turnedOn = true;
+            var n = (window.specials[1932].turnedOn ? 1 : 0);
+            window.specials[1933].multiplier = [1.5, 1.75][n];
+            p.scope.notify({
+                text: 'Using the ' + [1.5, 1.75][n] + 'x ATK multiplier. To switch to the ' + [1.75, 1.5][n] + 'x multiplier, Switch the order of the specials needed.',
+                name: '1933warning'
+            });
+        },
+        onDeactivation: function(p) {
+            window.specials[1933].turnedOn = false;
+        },
+    },
+    1934: {
+        atk: function(p) { return p.unit.class.has("타격") || p.unit.class.has("사격") || p.unit.class.has("참격") || p.unit.class.has("격투") ? 2 : 1},
+        type: "class"
+    },
+    1935: {
+        atk: function(p) { return p.unit.class.has("타격") || p.unit.class.has("사격") || p.unit.class.has("참격") || p.unit.class.has("격투") ? 2 : 1},
+        type: "class"
+    },
+    1936: {
+        staticMult: function(p) { return 15; }
+    },
+    1937: {
+        staticMult: function(p) { return 15; }
+    },
+    1938: {
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName); },
+        onActivation: function(p) {
+            p.scope.notify({
+                text: 'Assuming there are more than 4 enemies on the stage',
+                name: '1938warning'
+            });
+        },
+    },
+    1939: {
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName); },
+        onActivation: function(p) {
+            p.scope.notify({
+                text: 'Assuming there are more than 4 enemies on the stage',
+                name: '1938warning'
+            });
+        },
+    },
+    1940: {
+        turnedOn: false,
+        onActivation: function(p) {
+            if(p.captain.class.has("자유")){
+                window.specials[1940].turnedOn = true;
+            }
+        },
+        onDeactivation: function(p) {
+            window.specials[1940].turnedOn = false;
+        },
+        atk: function(p) { return p.unit.type == "힘" || p.unit.type == "속도" || p.unit.type == "마음" ? 1.75 : 1; },
+        type: "type"
+    },
+    1941: {
+        turnedOn: false,
+        onActivation: function(p) {
+            if(p.captain.class.has("자유")){
+                window.specials[1941].turnedOn = true;
+            }
+        },
+        onDeactivation: function(p) {
+            window.specials[1941].turnedOn = false;
+        },
+        atk: function(p) { return p.unit.type == "힘" || p.unit.type == "속도" || p.unit.type == "마음" ? 1.75 : 1; },
+        type: "type"
+    },
+    1942: {
+        atk: function(p) { return (p.delayed > 0 && (p.captain.class.has("자유"))) ? 1.75 : 1; },
+        type: "condition",
+    },
+    1943: {
+        atk: function(p) { return (p.delayed > 0 && (p.captain.class.has("자유"))) ? 1.75 : 1; },
+        type: "condition",
+    },
+    1944: {
+        affinity: function(p){ return p.unit.class.has("박식") ? 1.75 : 1; }
+    },
+    1945: {
+        affinity: function(p){ return p.unit.class.has("박식") ? 1.75 : 1; }
+    },
+    1946: {
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); },
+    },
+    1947: {
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); },
+    },
+    1952: {
+        chainAddition: function(p) { return p.captain.class.has("박식") ? .7 : 0; }
+    },
+    1953: {
+        chainAddition: function(p) { return p.captain.class.has("박식") ? .7 : 0; }
+    },
+    1954: {
+        atk: function(p) { return !p.unit.class.has('박식') ? 1 : window.specials[1954].multiplier; },
+        type: "class",
+        onActivation: function(p) {
+            var n = (window.specials[1954].multiplier == 1.75 ? 1 : 0);
+            window.specials[1954].multiplier = [1.75, 2.25][n];
+            p.scope.notify({
+                text: 'Using the ' + [1.75, 2.25][n] + 'x ATK multiplier. To switch to the ' + [2.25, 1.75][n] + 'x multiplier, disable and re-enable this special',
+                name: '1954warning'
+            });
+        }
+    },
+    1955: {
+        atk: function(p) { return !p.unit.class.has('박식') ? 1 : window.specials[1955].multiplier; },
+        type: "class",
+        onActivation: function(p) {
+            var n = (window.specials[1955].multiplier == 1.75 ? 1 : 0);
+            window.specials[1955].multiplier = [1.75, 2.25][n];
+            p.scope.notify({
+                text: 'Using the ' + [1.75, 2.25][n] + 'x ATK multiplier. To switch to the ' + [2.25, 1.75][n] + 'x multiplier, disable and re-enable this special',
+                name: '1955warning'
+            });
+        }
+    },
+    1956: {
+        chain: function(p) { return 2.75; },
+        chainLimiter: function(p) {
+            var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
+            return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? 2.75 : 1;
+        }
+    },
+    1957: {
+        chain: function(p) { return 2.75; },
+        chainLimiter: function(p) {
+            var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
+            return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? 2.75 : 1;
+        }
+    },
+    1960: {
+        turnedOn: false,
+        onActivation: function(p) {
+            window.specials[1960].turnedOn = true;
+            p.scope.notify({
+                text: 'Only affects Captain Ability if Pudding is your captain',
+                name: '1960warning'
+            });
+        },
+        onDeactivation: function(p) {
+            window.specials[1960].turnedOn[p.slot] = false;
+        },
+        delay: function(p) { return 1; }
+    },
+    1961: {
+        turnedOn: false,
+        onActivation: function(p) {
+            window.specials[1961].turnedOn = true;
+            p.scope.notify({
+                text: 'Only affects Captain Ability if Pudding is your captain',
+                name: '1961warning'
+            });
+        },
+        onDeactivation: function(p) {
+            window.specials[1961].turnedOn[p.slot] = false;
+        },
+        delay: function(p) { return 1; }
+    },
+    1962: {
+        turnedOn: false,
+        onActivation: function(p) {
+            window.specials[1962].turnedOn = true;
+            p.scope.notify({
+                text: 'Only affects Captain Ability if Sanji is your captain',
+                name: '1962warning'
+            });
+        },
+        onDeactivation: function(p) {
+            window.specials[1962].turnedOn[p.slot] = false;
+        },
+        chain: function(p) { return 2.5; },
+        chainLimiter: function(p) {
+            var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
+            return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? 2.5 : 1;
+        }
+    },
+    1963: {
+        turnedOn: false,
+        onActivation: function(p) {
+            window.specials[1963].turnedOn = true;
+            p.scope.notify({
+                text: 'Only affects Captain Ability if Sanji is your captain',
+                name: '1963warning'
+            });
+        },
+        onDeactivation: function(p) {
+            window.specials[1963].turnedOn[p.slot] = false;
+        },
+        chain: function(p) { return 2.5; },
+        chainLimiter: function(p) {
+            var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
+            return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? 2.5 : 1;
+        }
+    },
+    1964: {
+        delay: function(p) { return 1; },
+    },
+    1965: {
+        delay: function(p) { return 1; },
+    },
+    1966: {
+        atk: function(p) { return p.delayed > 0 ? 1.5 : 1; },
+        type: "condition",
+    },
+    1967:{
+        orb: function(p) { return (p.unit.class.has("사격") || p.unit.class.has("박식")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[1967].multiplier, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
+        onActivation: function(p) {
+            var n = (window.specials[1967].multiplier == 1.75 ? 1 : window.specials[1967].multiplier == 2 ? 2 : 1);
+            window.specials[1967].multiplier = [1.75, 2, 2.25][n];
+            p.scope.notify({
+                text: 'Using the ' + [1.75, 2, 2.25][n] + 'x Orb boost. To switch to the ' + [2.25, 1.75, 2][n] + 'x Orb boost, disable and re-enable this special',
+                name: '1967warning'
+            });
+        },
+    },
+    1968:{
+        orb: function(p) { return (p.unit.class.has("사격") || p.unit.class.has("박식")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[1968].multiplier, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
+        onActivation: function(p) {
+            var n = (window.specials[1968].multiplier == 1.75 ? 1 : window.specials[1968].multiplier == 2 ? 2 : 1);
+            window.specials[1968].multiplier = [1.75, 2, 2.25][n];
+            p.scope.notify({
+                text: 'Using the ' + [1.75, 2, 2.25][n] + 'x Orb boost. To switch to the ' + [2.25, 1.75, 2][n] + 'x Orb boost, disable and re-enable this special',
+                name: '1968warning'
+            });
+        },
+    },
+    1971: {
+        atk: function(p) { return (p.captain.class.has("박식") && p.defenseDown) ? 1.75 : 1; },
+        type: "condition",
+        def: function(p) { return p.captain.class.has("박식") ? .2 : 1; }
+    },
+    1972: {
+        atk: function(p) { return (p.captain.class.has("박식") && p.defenseDown) ? 1.75 : 1; },
+        type: "condition",
+        def: function(p) { return p.captain.class.has("박식") ? .2 : 1; }
+    },
+    1983: {
+        atk: function(p) { return p.unit.type == "마음" || p.unit.type == "지능" ? 1.5 : 1; },
+        type: "type"
+    },
+    1984: {
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName); },
+    },
+    1985: {
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName); },
+    },
+    1986: {
+        chainAddition: function(p) { return window.specials[1986].multiplier; },
+        onActivation: function(p) {
+            var n = (window.specials[1986].multiplier == .5 ? 1 : 0);
+            if (p.colorCount.힘 >= 3) {
+                window.specials[1986].multiplier = [.5, .75][n];
+            }
+            else {
+                window.specials[1986].multiplier = 0;
+            }
+            p.scope.notify({
+                text: 'Using the ' + [.5, .75][n] + 'x chain boost multiplier. To switch to the ' + [.75, .5][n] + 'x multiplier, disable and re-enable this special',
+                name: '1986warning'
+            });
+        },
+    },
+    1987: {
+        chainAddition: function(p) { return window.specials[1987].multiplier; },
+        onActivation: function(p) {
+            var n = (window.specials[1987].multiplier == .5 ? 1 : 0);
+            if (p.colorCount.힘 >= 3) {
+                window.specials[1987].multiplier = [.5, .75][n];
+            }
+            else {
+                window.specials[1987].multiplier = 0;
+            }
+            p.scope.notify({
+                text: 'Using the ' + [.5, .75][n] + 'x chain boost multiplier. To switch to the ' + [.75, .5][n] + 'x multiplier, disable and re-enable this special',
+                name: '1987warning'
+            });
+        },
+    },
+    1988: {
+        atk: function(p) { return p.captain != null ? (p.delayed > 0 && (p.captain.class.has("참격"))) ? 1.75 : 1 : 1; },
+        type: "condition",
+    },
+    1989: {
+        atk: function(p) { return p.captain != null ? (p.delayed > 0 && (p.captain.class.has("참격"))) ? 1.75 : 1 : 1; },
+        type: "condition",
+    },
+    1990: {
+        delay: function(p) { return 1; },
+        staticMult: function(p) { return p.captain ? (p.captain.type == "힘" || p.captain.type == "속도") ? 55 : 0 : 0; }
+    },
+    1991: {
+        delay: function(p) { return 1; },
+        staticMult: function(p) { return p.captain ? (p.captain.type == "힘" || p.captain.type == "속도") ? 55 : 0 : 0; }
+    },
+    1992: {
+        atk: function(p) { return p.unit.class.has('자유') ? window.specials[1992].multiplier : 1; },
+        type: "class",
+        onActivation: function(p) {
+            var n = (window.specials[1992].multiplier == 1.75 ? 1 : 0);
+            if (p.colorCount.속도 >= 3) {
+                window.specials[1992].multiplier = [1.75, 2][n];
+            }
+            else{
+                window.specials[1992].multiplier = 1;
+            }
+            p.scope.notify({
+                text: 'Using the ' + [1.75, 2][n] + 'x ATK multiplier. To switch to the ' + [2, 1.75][n] + 'x multiplier, disable and re-enable this special',
+                name: '1992warning'
+            });
+        }
+    },
+    1993: {
+        atk: function(p) { return p.unit.class.has('자유') ? window.specials[1993].multiplier : 1; },
+        type: "class",
+        onActivation: function(p) {
+            var n = (window.specials[1993].multiplier == 1.75 ? 1 : 0);
+            if (p.colorCount.속도 >= 3) {
+                window.specials[1993].multiplier = [1.75, 2][n];
+            }
+            else{
+                window.specials[1993].multiplier = 1;
+            }
+            p.scope.notify({
+                text: 'Using the ' + [1.75, 2][n] + 'x ATK multiplier. To switch to the ' + [2, 1.75][n] + 'x multiplier, disable and re-enable this special',
+                name: '1993warning'
+            });
+        }
+    },
+    1996: {
+        delay: function(p) { return 1; },
+    },
+    1997: {
+        delay: function(p) { return 1; },
+    },
+    2000: {
+        orb: function(p) { return p.unit.type == "기술" || p.unit.type == "마음" ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, 1, 2.25, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, 1, 1, [p.friendCaptain, p.captain], p.effectName); }
+    },
+    2003: {
+        atk: function(p) { return p.slot == p.sourceSlot ? 2 : 1; },
+        type: "type"
+    },
+    2004: {
+        atk: function(p) { return p.slot == p.sourceSlot ? 2 : 1; },
+        type: "type"
+    },
+    2006: {
+        atk: function(p) { return (p.colorCount.힘>=4 && p.unit.type == "힘") ? 2.25 : (p.colorCount.기술>=4 && p.unit.type == "기술") ? 2.25 : (p.colorCount.속도>=4 && p.unit.type == "속도") ? 2.25 : (p.colorCount.마음>=4 && p.unit.type == "마음") ? 2.25 : (p.colorCount.지능>=4 && p.unit.type == "지능") ? 2.25 : 1; },
+        type: "type",
+        chainAddition: function(p) { return .9; }
+    },
+    2007: {
+        atk: function(p) { return (p.colorCount.힘>=4 && p.unit.type == "힘") ? 2.25 : (p.colorCount.기술>=4 && p.unit.type == "기술") ? 2.25 : (p.colorCount.속도>=4 && p.unit.type == "속도") ? 2.25 : (p.colorCount.마음>=4 && p.unit.type == "마음") ? 2.25 : (p.colorCount.지능>=4 && p.unit.type == "지능") ? 2.25 : 1; },
+        type: "type",
+        chainAddition: function(p) { return .9; }
+    },
+    2008: {
+        affinity: function(p){ return (p.unit.type == "힘" || p.unit.type == "지능") ? window.specials[2008].multiplier : 1; },
+        onActivation: function(p) {
+            var n = (window.specials[2008].multiplier == 1.5 ? 1 : window.specials[2008].multiplier == 1.75 ? 2 : 0);
+            window.specials[2008].multiplier = [1.5, 1.75, 2][n];
+            p.scope.notify({
+                text: 'Using the ' + [1.5, 1.75, 2][n] + 'x affinity boost. To switch to the ' + [1.75, 2, 1.5][n] + 'x affinity boost, disable and re-enable this special',
+                name: '2008warning'
+            });
+        }
+    },
+    2009: {
+        affinity: function(p){ return (p.unit.type == "힘" || p.unit.type == "지능") ? window.specials[2009].multiplier : 1; },
+        onActivation: function(p) {
+            var n = (window.specials[2009].multiplier == 1.5 ? 1 : window.specials[2009].multiplier == 1.75 ? 2 : 0);
+            window.specials[2009].multiplier = [1.5, 1.75, 2][n];
+            p.scope.notify({
+                text: 'Using the ' + [1.5, 1.75, 2][n] + 'x affinity boost. To switch to the ' + [1.75, 2, 1.5][n] + 'x affinity boost, disable and re-enable this special',
+                name: '2009warning'
+            });
+        }
+    },
+    2014: {
+        delay: function(p) { return 1; },
+        atk: function(p) { return p.delayed > 0 ? 1.75 : 1; },
+        type: "condition",
+    },
+    2015: {
+        delay: function(p) { return 1; },
+        atk: function(p) { return p.delayed > 0 ? 1.75 : 1; },
+        type: "condition",
+    },
+    2016: {
+        atk: function(p) { return p.unit.class.has("야심") ? window.specials[2016].multiplier : 1; },
+        type: "class",
+        onActivation: function(p) {
+            var n = (p.percHP >= 50 ? 2 : 1.5);
+            window.specials[2016].multiplier = n;
+            p.scope.notify({
+                text: 'HP ' + (n == 2 ? 'above' : 'below') + ' 50%, using the ' + n + 'x multiplier.',
+                name: '2016warning'
+            });
+        }
+    },
+    2017: {
+        atk: function(p) { return p.unit.class.has("야심") ? window.specials[2017].multiplier : 1; },
+        type: "class",
+        onActivation: function(p) {
+            var n = (p.percHP >= 50 ? 2 : 1.5);
+            window.specials[2017].multiplier = n;
+            p.scope.notify({
+                text: 'HP ' + (n == 2 ? 'above' : 'below') + ' 50%, using the ' + n + 'x multiplier.',
+                name: '2017warning'
+            });
+        }
+    },
+    2020: {
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); },
+    },
+    2021: {
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); },
+    },
+    2022: {
+        orb: function(p) { return (p.unit.type == "힘" || p.unit.type == "지능") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2.25, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
+    },
+    2023: {
+        orb: function(p) { return (p.unit.type == "힘" || p.unit.type == "지능") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2.25, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
+    },
+    2024: {
+        atk: function(p) { return p.unit.type == "마음" || p.unit.type == "속도" ? 2.25 : 1; },
+        type: "type",
+    },
+    2025: {
+        atk: function(p) { return p.unit.type == "마음" || p.unit.type == "속도" ? 2.25 : 1; },
+        type: "type",
+    },
+    2026: {
+        delay: function(p) { return 1; },
+        affinity: function(p) { return !(p.unit.type == "속도" || p.unit.type == "마음") ? 1 : window.specials[2026].multiplier; },
+        onActivation: function(p) {
+            if (p.captain.type == "속도" || p.captain.type == "마음") {
+                window.specials[2026].multiplier = 2;
+            }
+            else{
+                window.specials[2026].multiplier = 1;
+            }
+        }
+    },
+    2027: {
+        delay: function(p) { return 1; },
+        affinity: function(p) { return !(p.unit.type == "속도" || p.unit.type == "마음") ? 1 : window.specials[2027].multiplier; },
+        onActivation: function(p) {
+            if (p.captain.type == "속도" || p.captain.type == "마음") {
+                window.specials[2027].multiplier = 2;
+            }
+            else{
+                window.specials[2027].multiplier = 1;
+            }
+        }
+    },
+    2028: {
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[2028].multiplier, [p.friendCaptain, p.captain], p.effectName); },
+        onActivation: function(p) {
+            if (p.colorCount.속도 + p.colorCount.마음 >= 4) {
+                window.specials[2028].multiplier = 2;
+            }
+            else{
+                window.specials[2028].multiplier = 1;
+            }
+        }
+    },
+    2029: {
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[2029].multiplier, [p.friendCaptain, p.captain], p.effectName); },
+        onActivation: function(p) {
+            if (p.colorCount.속도 + p.colorCount.마음 >= 4) {
+                window.specials[2029].multiplier = 2;
+            }
+            else{
+                window.specials[2029].multiplier = 1;
+            }
+        }
+    },
+    2032: {
+        atk: function(p) { return 1.5; },
+        type: "type",
+        orb: function(p) { return window.specials[2032].multiplier ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, window.specials[2032].multiplier, 1.5, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); },
+        chainAddition: function(p) { return window.specials[2032].multiplier ? .3 : 0; },
+        staticMult: function(p) { return window.specials[2032].multiplier ? 20 : 0; },
+        onActivation: function(p) {
+            if (p.captain.type == "마음") {
+                window.specials[2032].multiplier = true;
+            }
+            else{
+                window.specials[2032].multiplier = false;
+            }
+        }
+    },
+    2033: {
+        atk: function(p) { return 1.5; },
+        type: "type",
+        orb: function(p) { return window.specials[2033].multiplier ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, window.specials[2033].multiplier, 1.5, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); },
+        chainAddition: function(p) { return window.specials[2033].multiplier ? .3 : 0; },
+        staticMult: function(p) { return window.specials[2033].multiplier ? 20 : 0; },
+        onActivation: function(p) {
+            if (p.captain.type == "마음") {
+                window.specials[2033].multiplier = true;
+            }
+            else{
+                window.specials[2033].multiplier = false;
+            }
+        }
+    },
+    2034: {
+        turnedOn: [ false, false ],
+        onActivation: function(p) {
+            window.specials[2034].turnedOn[p.slot] = true;
+            p.scope.notify({
+                text: 'Only affects damage if Kizaru is your captain',
+                name: '2034warning'
+            });
+        },
+        onDeactivation: function(p) {
+            window.specials[2034].turnedOn[p.slot] = false;
+        }
+    },
+    2035: {
+        atk: function(p) { return p.unit.cost <= 40 ? 2 : 1; },
+        type: "class"
+    },
+    2036: {
+        atk: function(p) { return p.unit.class.has("격투") ? 1.75 : 1; },
+        type: "class",
+    },
+    2037: {
+        atk: function(p) { return p.unit.class.has("격투") ? 1.75 : 1; },
+        type: "class",
+    },
+    2040: {
+        atk: function(p) { return p.slot == p.sourceSlot ? 2.25 : 1; },
+        type: "type"
+    },
+    2041: {
+        atk: function(p) { return p.slot == p.sourceSlot ? 2.25 : 1; },
+        type: "type"
+    },
+    2044: {
+        atk: function(p) { return p.unit.class.has("박식") ? 1.75 : 1; },
+        type: "class",
+    },
+    2046: {
+        orb: function(p) { return p.unit.type == window.specials[2046].multiType ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[2046].multiplier, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
+        onActivation: function(p) {
+            if (p.colorCount.힘 >= 4 || p.colorCount.기술 >= 4 || p.colorCount.속도 >= 4 || p.colorCount.마음 >= 4 || p.colorCount.지능 >= 4) {
+                window.specials[2046].multiplier = 1.75;
+                if (p.colorCount.힘 >= 4){
+                    window.specials[2046].multiType = "힘";
+                }
+                if (p.colorCount.속도 >= 4){
+                    window.specials[2046].multiType = "속도";
+                }
+                if (p.colorCount.기술 >= 4){
+                    window.specials[2046].multiType = "기술";
+                }
+                if (p.colorCount.마음 >= 4){
+                    window.specials[2046].multiType = "마음";
+                }
+                if (p.colorCount.지능 >= 4){
+                    window.specials[2046].multiType = "지능";
+                }
+            }
+            else{
+                window.specials[2046].multiplier = 1;
+                window.specials[2046].multiType = "null";
+            }
+        }
+    },
+    2047: {
+        orb: function(p) { return p.unit.class.has("격투") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
+        warning: "Selected special (%name%) assumes that the enemy has Delay Protection."
+    },
+    2048: {
+        orb: function(p) { return p.unit.class.has("격투") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
+        warning: "Selected special (%name%) assumes that the enemy has Delay Protection."
+    },
+    2049: {
+        chain: function(p) { return 3; },
+        chainLimiter: function(p) {
+            var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
+            return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? 3 : 1;
+        }
+    },
+    2050: {
+        chain: function(p) { return 3; },
+        chainLimiter: function(p) {
+            var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
+            return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? 3 : 1;
+        }
+    },
+    2051: {
+        atk: function(p) { return p.unit.class.has("격투") ? 1.75 : 1; },
+        type: "class",
+    },
+    2052: {
+        atk: function(p) { return p.unit.class.has("격투") ? 1.75 : 1; },
+        type: "class",
+    },
+    2057: {
+        atk: function(p) { return p.unit.cost <= 15 ? 1.75 : 1; },
+        type: "class"
+    },
+    2058: {
+        orbs: function(p) { return p.unit.cost <= 15 ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
+    },
+    2059: {
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); },
+        chain: function(p) { return window.specials[2059].multiplier; },
+        chainLimiter: function(p) {
+            var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
+            return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? window.specials[2059].multiplier : 1;
+        },
+        onActivation: function(p) {
+            var n = (window.specials[2059].multiplier == 2.5 ? 1 : window.specials[2059].multiplier == 2.75 ? 2 : 0);
+            window.specials[2059].multiplier = [2.5, 2.75, 3][n];
+            p.scope.notify({
+                text: 'Using the ' + [2.5, 2.75, 3][n] + 'x chain lock. To switch to the ' + [2.75, 3, 2.5][n] + 'x chain lock, disable and re-enable this special',
+                name: '2059warning'
+            });
+        }
+    },
+    2060: {
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); },
+        chain: function(p) { return window.specials[2060].multiplier; },
+        chainLimiter: function(p) {
+            var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
+            return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? window.specials[2060].multiplier : 1;
+        },
+        onActivation: function(p) {
+            var n = (window.specials[2060].multiplier == 2.5 ? 1 : window.specials[2060].multiplier == 2.75 ? 2 : 0);
+            window.specials[2060].multiplier = [2.5, 2.75, 3][n];
+            p.scope.notify({
+                text: 'Using the ' + [2.5, 2.75, 3][n] + 'x chain lock. To switch to the ' + [2.75, 3, 2.5][n] + 'x chain lock, disable and re-enable this special',
+                name: '2060warning'
+            });
+        }
+    },
+    2063: {
+        atk: function(p) { return p.unit.type == window.specials[2063].captType ? 1.75 : 1; },
+        type: "type",
+        onActivation: function(p) {
+            window.specials[2063].captType = p.captain.type;
+        }
+    },
+    2064: {
+        atk: function(p) { return p.unit.type == window.specials[2064].captType ? 1.75 : 1; },
+        type: "type",
+        onActivation: function(p) {
+            window.specials[2064].captType = p.captain.type;
+        }
+    },
+    2067: {
+        chain: function(p) { return 2.75; },
+        chainLimiter: function(p) {
+            var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
+            return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? 2.75 : 1;
+        }
+    },
+    2068: {
+        chain: function(p) { return 2.75; },
+        chainLimiter: function(p) {
+            var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
+            return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? 2.75 : 1;
+        }
+    },
+    2069: {
+        delay: function(p) { return 1; },
+        chain: function(p) { return 2.5; },
+        chainLimiter: function(p) {
+            var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
+            return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? 2.5 : 1;
+        }
+    },
+    2070: {
+        delay: function(p) { return 1; },
+        chain: function(p) { return 2.5; },
+        chainLimiter: function(p) {
+            var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
+            return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? 2.5 : 1;
+        }
+    },
+    2071: {
+        def: function(p) { return 0.2; },
+        chainAddition: function(p) { return 0.6; }
+    },
+    2072: {
+        def: function(p) { return 0.2; },
+        chainAddition: function(p) { return 0.6; }
+    },
+    2073: {
+        atk: function(p) { return 2; },
+        type: "class"
+    },
+    2074: {
+        atk: function(p) { return 2; },
+        type: "class"
+    },
+    2075: {
+        affinity: function(p) { return (window.specials[2075].multiplier && (p.unit.class.has("자유") || p.unit.class.has("박식") || p.unit.class.has("강인") || p.unit.class.has("야심"))) ? 1.75 : 1; },
+        orb: function(p) { return (window.specials[2075].multiplier && (p.unit.class.has("자유") || p.unit.class.has("박식") || p.unit.class.has("강인") || p.unit.class.has("야심"))) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
+        onActivation: function(p) {
+            if (p.captain.class.has("자유") || p.captain.class.has("박식") || p.captain.class.has("강인") || p.captain.class.has("야심"))
+            window.specials[2075].multiplier = true;
+        }
+    },
+    2076: {
+        affinity: function(p) { return (window.specials[2076].multiplier && (p.unit.class.has("자유") || p.unit.class.has("박식") || p.unit.class.has("강인") || p.unit.class.has("야심"))) ? 1.75 : 1; },
+        orb: function(p) { return (window.specials[2076].multiplier && (p.unit.class.has("자유") || p.unit.class.has("박식") || p.unit.class.has("강인") || p.unit.class.has("야심"))) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
+        onActivation: function(p) {
+            if (p.captain.class.has("자유") || p.captain.class.has("박식") || p.captain.class.has("강인") || p.captain.class.has("야심"))
+            window.specials[2076].multiplier = true;
+        }
+    },
+    2077: {
+        delay: function(p) { return 1; },
+        atk: function(p) { return p.defenseDown ? 1.75 : 1; },
+        type: "condition"
+    },
+    2078: {
+        delay: function(p) { return 1; },
+        atk: function(p) { return p.defenseDown ? 1.75 : 1; },
+        type: "condition"
+    },
+    2079: {
+        affinity: function(p) { return 1.75; },
+        warning: "Selected special (%name%) assumes that the enemy has Delay Protection.",
+    },
+    2080: {
+        affinity: function(p) { return 1.75; },
+        warning: "Selected special (%name%) assumes that the enemy has Delay Protection.",
+    },
+    2081: {
+        atk: function(p) { return 1.75; },
+        type: "class",
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName); },
+        warning: "Selected special (%name%) assumes that the enemy has Delay Protection.",
+    },
+    2082: {
+        atk: function(p) { return 1.75; },
+        type: "class",
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName); },
+        warning: "Selected special (%name%) assumes that the enemy has Delay Protection.",
+    },
+    2083: {
+        orb: function(p) { return (p.unit.type == "기술" || p.unit.type == "속도" || p.unit.type == "마음") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
+    },
+    2084: {
+        orb: function(p) { return (p.unit.type == "기술" || p.unit.type == "속도" || p.unit.type == "마음") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
+    },
+    2085: {
+        atk: function(p) { return p.unit.type == "기술" || p.unit.type == "속도" || p.unit.type == "지능" ? 1.75 : 1; },
+        type: "type"
+    },
+    2086: {
+        atk: function(p) { return p.unit.type == "기술" || p.unit.type == "속도" || p.unit.type == "지능" ? 1.75 : 1; },
+        type: "type"
+    },
+    2087: {
+        turnedOn: [ false, false ],
+        onActivation: function(p) {
+            window.specials[2087].turnedOn[p.slot] = true;
+            p.scope.notify({
+                text: 'Only affects damage if Luffy is your captain',
+                name: '2087warning'
+            });
+        },
+        onDeactivation: function(p) {
+            window.specials[2087].turnedOn[p.slot] = false;
+        },
+        chainAddition: function(p) { return 0.5; }
+    },
+    2088: {
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName); }
+    },
+    2089: {
+        atk: function(p) { return window.specials[2089].multiplier; },
+        type: "class",
+        onActivation: function(p) {
+            var n = (p.percHP == 100 ? 1.5 : 1);
+            window.specials[2089].multiplier = n;
+            p.scope.notify({
+                text: 'HP ' + (n == 1.5 ? 'equal to' : 'below') + ' 100%, using the ' + n + 'x multiplier.',
+                name: '2089warning'
+            });
+        }
+    },
+    2091: {
+        delay: function(p) { return 1; },
+    },
+    2092: {
+        turnedOn: [ false, false ],
+        onActivation: function(p) {
+            window.specials[2092].turnedOn[p.slot] = true;
+            p.scope.notify({
+                text: 'Only affects damage if Zoro is your captain',
+                name: '2092warning'
+            });
+        },
+        onDeactivation: function(p) {
+            window.specials[2092].turnedOn[p.slot] = false;
+        },
+        atk: function(p) { return p.defenseDown ? 1.5 : 1; },
+        type: "condition",
+        def: function(p) { return 0.5; }
+    },
+    2093: {
+        atk: function(p) { return p.delayed > 0 ? 1.5 : 1; },
+        type: "condition",
+    },
+    2096: {
+        affinity: function(p) { return (p.unit.class.has("참격") || p.unit.class.has("야심")) ? window.specials[2096].multiplier : 1; },
+        onActivation: function(p) {
+            var n = (p.percHP == 100 ? 2 : 1.75);
+            window.specials[2096].multiplier = n;
+            p.scope.notify({
+                text: 'HP ' + (n == 2 ? 'equal to' : 'below') + ' 100%, using the ' + n + 'x multiplier.',
+                name: '2096warning'
+            });
+        }
+    },
+    2097: {
+        affinity: function(p) { return (p.unit.class.has("참격") || p.unit.class.has("야심")) ? window.specials[2097].multiplier : 1; },
+        onActivation: function(p) {
+            var n = (p.percHP == 100 ? 2 : 1.75);
+            window.specials[2097].multiplier = n;
+            p.scope.notify({
+                text: 'HP ' + (n == 2 ? 'equal to' : 'below') + ' 100%, using the ' + n + 'x multiplier.',
+                name: '2097warning'
+            });
+        }
+    },
+    2098: {
+        chain: function(p) { return 3.25; },
+        chainLimiter: function(p) {
+            var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
+            return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? 3.25 : 1;
+        }
+    },
+    2099: {
+        chain: function(p) { return 3.25; },
+        chainLimiter: function(p) {
+            var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
+            return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? 3.25 : 1;
+        }
+    },
+    2100: {
+        atk: function(p) { return window.specials[2100].multiplier; },
+        type: "class",
+        onActivation: function(p) {
+            window.specials[2100].multiplier = 1;
+            if (p.captain.type == "힘" || p.captain.type == "속도"){
+                window.specials[2100].multiplier = 1.75;
+            }
+        }
+    },
+    2101: {
+        atk: function(p) { return window.specials[2101].multiplier; },
+        type: "class",
+        onActivation: function(p) {
+            window.specials[2101].multiplier = 1;
+            if (p.captain.type == "힘" || p.captain.type == "속도"){
+                window.specials[2101].multiplier = 1.75;
+            }
+        }
+    },
+    2102: {
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[2102].multiplier, [p.friendCaptain, p.captain], p.effectName); },
+        onActivation: function(p) {
+            window.specials[2102].multiplier = 1;
+            if (p.captain.type == "지능" || p.captain.type == "속도"){
+                window.specials[2102].multiplier = 1.75;
+            }
+        }
+    },
+    2103: {
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, window.specials[2103].multiplier, [p.friendCaptain, p.captain], p.effectName); },
+        onActivation: function(p) {
+            window.specials[2103].multiplier = 1;
+            if (p.captain.type == "지능" || p.captain.type == "속도"){
+                window.specials[2103].multiplier = 1.75;
+            }
+        }
+    },
+    2104: {
+        staticMult: function(p) { return window.specials[2104].multiplier ? 40 : 0; },
+        onActivation: function(p) {
+            window.specials[2104].multiplier = false;
+            if (p.captain.type == "기술" || p.captain.type == "속도"){
+                window.specials[2104].multiplier = true;
+            }
+        }
+    },
+    2105: {
+        staticMult: function(p) { return window.specials[2105].multiplier ? 40 : 0; },
+        onActivation: function(p) {
+            window.specials[2105].multiplier = false;
+            if (p.captain.type == "기술" || p.captain.type == "속도"){
+                window.specials[2105].multiplier = true;
+            }
+        }
+    },
+    2108: {
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 3, [p.friendCaptain, p.captain], p.effectName); },
+        affinity: function(p) { return 1.25; },
+        atk: function(p) { return 1.25; },
+        type: "type",
+    },
+    2109: {
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 3, [p.friendCaptain, p.captain], p.effectName); },
+        affinity: function(p) { return 1.25; },
+        atk: function(p) { return 1.25; },
+        type: "type",
+    },
+    2112: {
+        atk: function(p) { return ((p.delayed > 0) && (p.unit.class.has("격투") || p.unit.class.has("타격") || p.unit.class.has("사격") || p.unit.class.has("박식") || p.unit.class.has("강인"))) ? 1.75 : 1; },
+        type: "condition",
+        warning: "Selected special (%name%) assumes that the enemy is Delayed.",
+    },
+    2113: {
+        atk: function(p) { return ((p.delayed > 0) && (p.unit.class.has("격투") || p.unit.class.has("타격") || p.unit.class.has("사격") || p.unit.class.has("박식") || p.unit.class.has("강인"))) ? 1.75 : 1; },
+        type: "condition",
+        warning: "Selected special (%name%) assumes that the enemy is Delayed.",
+    },
+    2114: {
+        staticMult: function(p) { return 30; }
+    },
+    2115: {
+        staticMult: function(p) { return 30; }
+    },
+    2116: {
+        def: function(p) { return 0; }
+    },
+    2117: {
+        def: function(p) { return 0; }
+    },
+    2120: {
+        atk: function(p) { return ((p.unit.class.has("격투") || p.unit.class.has("타격") || p.unit.class.has("사격") || p.unit.class.has("박식") || p.unit.class.has("강인")) && (p.delayed > 0)) ? 2 : (p.unit.class.has("격투") || p.unit.class.has("강인")) ? 1.75 : 1; },
+        type: "class",
+        warning: "For the 2x boost special (%name%) assumes that the enemy is Delayed.",
+    },
+    2121: {
+        atk: function(p) { return ((p.unit.class.has("격투") || p.unit.class.has("타격") || p.unit.class.has("사격") || p.unit.class.has("박식") || p.unit.class.has("강인")) && (p.delayed > 0)) ? 2 : (p.unit.class.has("격투") || p.unit.class.has("강인")) ? 1.75 : 1; },
+        type: "class",
+        warning: "For the 2x boost special (%name%) assumes that the enemy is Delayed.",
+    },
+    2122: {
+        def: function(p) { return 0.2; },
+        orb: function(p) { return (p.unit.class.has("강인") || p.unit.class.has("박식")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }
+    },
+    2123: {
+        def: function(p) { return 0.2; },
+        orb: function(p) { return (p.unit.class.has("강인") || p.unit.class.has("박식")) ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.75, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }
+    },
+    2127: {
+        atk: function(p) { return p.unit.class.has("박식") ? 1.5 : 1; },
+        type: "class",
+        orb: function(p) { return p.unit.class.has("박식") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); }	
+    },
+    2128: {
+        turnedOn: false,
+        onActivation: function(p) {
+            window.specials[2128].turnedOn = true;
+        },
+        onDeactivation: function(p) {
+            window.specials[2128].turnedOn = false;
+        }
+    },
+    2129: {
+        atk: function(p) { return 1.2; },
+        type: "class"
+    },
+    5000: {
+        atk: function(p) { return p.unit.type == "마음" || p.unit.type == "지능" ? 1.5 : 1; },
+        type: "type",
+    },
+    5001: {
+        atk: function(p) { return p.unit.type == "마음" || p.unit.type == "지능" ? 1.5 : 1; },
+        type: "type",
+    },
+    5002: {
+        atk: function(p) { return p.unit.type == "마음" || p.unit.type == "지능" ? 1.5 : 1; },
+        type: "type",
+    },
+    5003: {
+        atk: function(p) { return p.unit.type == "마음" || p.unit.type == "지능" ? 1.5 : 1; },
+        type: "type",
+    },
+    5004: {
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName); }
+    },
+    5005: {
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName); }
+    },
+    5006: {
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName); }
+    },
+    5007: {
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName); }
+    },
+    5008: {
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName); }
+    },
+    5009: {
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName); }
+    },
+    5010: {
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName); }
+    },
+    5011: {
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName); }
+    },
+    5012: {
+        orb: function(p) { return (p.unit.type == "기술" || p.unit.type == "마음") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2.25, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
+    },
+    5013: {
+        orb: function(p) { return (p.unit.type == "기술" || p.unit.type == "마음") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2.25, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
+    },
+    5014: {
+        orb: function(p) { return (p.unit.type == "기술" || p.unit.type == "마음") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2.25, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
+    },
+    5015: {
+        orb: function(p) { return (p.unit.type == "기술" || p.unit.type == "마음") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2.25, [p.friendCaptain, p.captain], p.effectName) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain], p.effectName); },
     },
 };
