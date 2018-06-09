@@ -1,0 +1,80 @@
+html, body {
+    background-color: #2b303b;
+}
+
+#hp-rcv, .tip, #turnLabel, #healLabel {
+    color: white;
+}
+
+.damage.힘, li.힘, #gather {
+    background-color: #bf616a;
+}
+
+.damage.속도, li.속도 {
+    background-color: #96b5b4;
+}
+
+.damage.기술, li.기술 {
+    background-color: #a3be8c;
+}
+
+.damage.마음, li.마음 {
+    background-color: #ebcb8b;
+}
+
+.damage.지능, li.지능 {
+    background-color: #b48ead;
+}
+
+li.힘 > div, li.속도 > div, li.기술 > div, li.마음 > div, li.지능 > div {
+    color: white !important;
+}
+
+.noUi-target {
+    border: none;
+}
+
+.panel {
+    background-color: #4f5b66;
+}
+
+#menu li {
+    border-bottom: 2px solid #343d46;
+}
+
+.unit, .unit:hover {
+    border-color: white;
+    color: white;
+}
+
+.modal-header {
+    background-color: #65737e;
+}
+
+.modal-body , .floatThead-table tr > th {
+    background-color: #eff1f5;
+}
+
+.modal-footer {
+    background-color: #dfe1e8;
+}
+
+.unitLevel {
+    color: black;
+}
+
+.btn.trigger > i {
+    color: white;
+}
+
+.btn.trigger > i:hover {
+    color: black;
+}
+
+.rotater:hover .fa {
+    color: white !important;
+}
+
+.fa-star {
+    color: black !important;
+}

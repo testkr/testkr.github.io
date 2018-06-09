@@ -1,0 +1,115 @@
+<div class="popover-data" ng-controller="PopoverCtrl">
+
+    <table class="table table-striped">
+        <tbody>
+            <tr></tr>
+            <tr class="header">
+            <td ng-if="data.team[slot].unit.class.length > 2">타입</td>
+                <td ng-if="data.team[slot].unit.class.length < 3">타입 1</td>
+                <td ng-if="data.team[slot].unit.class.length < 3">타입 2</td>
+                <td>속성</td>
+                <td>등급</td>
+                <td colspan="{{data.team[slot].unit.class.length < 3 ? 1 : 2}}">코스트</td>
+            </tr>
+            <tr>
+                <td ng-if="data.team[slot].unit.class.length > 2">{{data.team[slot].unit.class}}</td>
+                <td ng-if="data.team[slot].unit.class.length < 3">{{data.team[slot].unit.class[0]}}</td>
+                <td ng-if="data.team[slot].unit.class.length < 3">{{data.team[slot].unit.class[1]}}</td>
+                <td>{{data.team[slot].unit.type}}</td>
+                <td>
+                    <i class="fa fa-star" ng-repeat="i in [ ] | range:data.team[slot].unit.stars"></i>
+                </td>
+                <td colspan="{{data.team[slot].unit.class.length < 3 ? 1 : 2}}">{{data.team[slot].unit.cost}}</td>
+            </tr>
+            <tr class="header">
+            <td>체력</td>
+            <td>공격력</td>
+            <td>회복력</td>
+            <td>콤보</td>
+            <td>슬롯</td>
+            </tr>
+            <tr>
+                <td>
+                    {{numbers.team[slot].hp | number}}
+                    {{data.team[slot].candies.hp > 0 ? ' (+' + (data.team[slot].candies.hp * 5) + ')' : ''}}
+                </td>
+                <td>
+                    {{numbers.team[slot].atk | number}}
+                    {{data.team[slot].candies.atk > 0 ? ' (+' + (data.team[slot].candies.atk* 2) + ')' : ''}}
+                </td>
+                <td>
+                    {{numbers.team[slot].rcv | number}}
+                    {{data.team[slot].candies.rcv > 0 ? ' (+' + data.team[slot].candies.rcv + ')' : ''}}
+                </td>
+                <td>{{data.team[slot].unit.combo}}</td>
+                <td>{{data.team[slot].unit.slots}}</td>
+            </tr>
+            <tr class="header" ng-if="slot < 2">
+                <td colspan="5">선장효과</td>
+            </tr>
+            <tr ng-if="slot < 2">
+                <td colspan="5"> <!--
+                    <span class="badge badge-base" ng-show="details.captain.base">기본 선장효과</span>
+                    <div ng-show="details.captain.base" ng-bind-html="details.captain.base | decorate"></div>
+                    <span class="badge badge-level1" ng-show="details.captain.level1">한계돌파 Lv 1 선장효과</span>
+                    <div ng-show="details.captain.level1" ng-bind-html="details.captain.level1 | decorate"></div>
+                    <span class="badge badge-level2" ng-show="details.captain.level2">한계돌파 Lv 2 선장효과</span>
+                    <div ng-show="details.captain.level2" ng-bind-html="details.captain.level2 | decorate"></div>
+                    <span class="badge badge-level3" ng-show="details.captain.level3">한계돌파 Lv 3 선장효과</span>
+                    <div ng-show="details.captain.level3" ng-bind-html="details.captain.level3 | decorate"></div>
+                    <span class="badge badge-level4" ng-show="details.captain.level4">한계돌파 Lv 4 선장효과</span>
+                    <div ng-show="details.captain.level4" ng-bind-html="details.captain.level4 | decorate"></div>
+                    <span class="badge badge-level5" ng-show="details.captain.level5">한계돌파 Lv 5 선장효과</span>
+                    <div ng-show="details.captain.level5" ng-bind-html="details.captain.level5 | decorate"></div>
+                    <span class="badge badge-level6" ng-show="details.captain.level6">한계돌파 Lv 6 선장효과</span>
+                    <div ng-show="details.captain.level6" ng-bind-html="details.captain.level6 | decorate"></div>
+                    <span class="badge badge-character1" ng-show="details.captain.character1">Character 1 선장효과</span>
+                    <div ng-show="details.captain.character1" ng-bind-html="details.captain.character1 | decorate"></div>
+                    <span class="badge badge-character2" ng-show="details.captain.character2">Character 2 선장효과</span>
+                    <div ng-show="details.captain.character2" ng-bind-html="details.captain.character2 | decorate"></div>
+                    <span class="badge badge-combined" ng-show="details.captain.combined">Dual Characters 선장효과</span>
+                    <div ng-show="details.captain.combined" ng-bind-html="details.captain.combined | decorate"></div> -->
+                    <div ng-bind-html="details.captain | decorate"></div>
+                    <span class="notes" ng-if="details.captainNotes" ng-bind-html="details.captainNotes | notes | decorate"></span>
+                </td>
+            </tr>
+            <tr class="header" ng-if="slot > 1">
+                <td colspan="5">선원효과</td>
+            </tr>
+            <tr ng-if="slot > 1">
+                <td colspan="5">
+                    <div ng-bind-html="details.sailor | decorate"></div>
+                    <span class="badge badge-sbase" ng-show="details.sailor.base">선원효과</span>
+                    <div ng-show="details.sailor.base" ng-bind-html="details.sailor.base | decorate"></div>
+                    <span class="badge badge-sbase2" ng-show="details.sailor.base2">선원효과 2</span>
+                    <div ng-show="details.sailor.base2" ng-bind-html="details.sailor.base2 | decorate"></div>
+                    <span class="badge badge-character1" ng-show="details.sailor.character1">캐릭터 1 선원효과</span>
+                    <div ng-show="details.sailor.character1" ng-bind-html="details.sailor.character1 | decorate"></div>
+                    <span class="badge badge-character2" ng-show="details.sailor.character2">캐릭터 2 선원효과</span>
+                    <div ng-show="details.sailor.character2" ng-bind-html="details.sailor.character2 | decorate"></div>
+                    <span class="badge badge-combined" ng-show="details.sailor.combined">듀얼 캐릭터 선원효과</span>
+                    <div ng-show="details.sailor.combined" ng-bind-html="details.sailor.combined | decorate"></div>
+                    <span class="badge badge-slevel1" ng-show="details.sailor.level1">한계돌파 선원효과 1</span>
+                    <div ng-show="details.sailor.level1" ng-bind-html="details.sailor.level1 | decorate"></div>
+                    <span class="badge badge-slevel2" ng-show="details.sailor.level2">한계돌파 선원효과 2</span>
+                    <div ng-show="details.sailor.level2" ng-bind-html="details.sailor.level2 | decorate"></div>
+                    <span class="notes" ng-if="details.sailorNotes" ng-bind-html="details.sailorNotes | notes | decorate"></span>
+                </td>
+            </tr>
+            <tr class="header">
+                <td colspan="5">필살기: <strong class="specialName" ng-if="details.specialName">{{details.specialName}}</strong></td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <div ng-bind-html="details.special | decorate"></div>
+                    <div class="cooldown" ng-if="details.special && cooldown">
+                        {{cooldown.length ? cooldown[0] : cooldown}} 턴
+                        {{cooldown.length ? ' (최대: ' + cooldown[1] + ' 턴)' : ''}}
+                    </div>
+                    <span class="notes" ng-if="details.specialNotes" ng-bind-html="details.specialNotes | notes | decorate"></span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

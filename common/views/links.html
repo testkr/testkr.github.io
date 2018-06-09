@@ -1,0 +1,71 @@
+<div class="menu" id="links-button">
+
+    <div class="btn trigger">
+        <i class="fa fa-star fa-spin"></i>
+    </div>
+
+    <div class="icons">
+        
+        <div class="rotater" id="link-home" title="Home">
+            <a class="btn btn-icon" href="/">
+                <i class="fa fa-home"></i>
+            </a>
+            <a class="tip">Front Page</a>
+        </div>
+
+        <div class="rotater" id="link-report" title="Bug report">
+            <a class="btn btn-icon" target="_blank"
+                    href="https://discord.gg/3w22jAR">
+                <i class="fa fa-flag"></i>
+            </a>
+            <a class="tip">Bug report</a>
+        </div>
+        
+        <div class="rotater" id="link-prob" title="확률계산" ng-if="exclude != 'prob'">
+            <a class="btn btn-icon" href="../probability">
+                <i class="fa fa-arrow-up"></i>
+            </a>
+            <a class="tip">확률계산</a>
+        </div>
+
+        <div class="rotater" id="link-drops" title="던전 정보" ng-if="exclude != 'drops'">
+            <a class="btn btn-icon" target="_blank" href="../drops">
+                <i class="fa fa-arrow-down"></i>
+            </a>
+            <a class="tip">던전 정보</a>
+        </div>
+
+        <div class="rotater" id="link-characters" title="캐릭터 정보" ng-if="exclude != 'characters'">
+            <a class="btn btn-icon" target="_blank" href="../characters">
+                <i class="fa fa-book"></i>
+                <a class="tip">캐릭터 정보</a>
+            </a>
+        </div>
+
+        <div class="rotater" id="link-damage" title="대미지 계산기" ng-if="exclude != 'calculator'">
+            <a class="btn btn-icon" target="_blank" href="../damage">
+                <i class="fa fa-calculator"></i>
+            </a>
+            <a class="tip">대미지 계산기</a>
+        </div>
+
+        <div class="rotater" id="link-tally" title="진화 도우미" ng-if="exclude != 'tally'">
+            <a class="btn btn-icon" target="_blank" href="../mats">
+                <i class="fa fa-list-ul"></i>
+            </a>
+            <a class="tip">진화 도우미</a>
+        </div>
+
+        <div class="rotater" id="link-slots" title="슬롯 시뮬" ng-if="exclude != 'slots'">
+            <a class="btn btn-icon" target="_blank" href="../slots">
+                <i class="fa fa-dot-circle-o"></i>
+            </a>
+            <a class="tip">슬롯 시뮬</a>
+        </div>
+        
+        
+
+
+    </div>
+
+</div>

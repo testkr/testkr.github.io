@@ -1,0 +1,104 @@
+#stats {
+    position: relative;
+    width: 150px;
+    height: 350px;
+}
+
+.damage {
+    cursor: pointer;
+    position: absolute;
+    transition: top .5s, height .5s;
+    height: 60px;
+    z-index: 1;
+    user-select: none;
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+}
+
+.damage.힘 { top: 0px; }
+.damage.속도 { top: 73px; }
+.damage.기술 { top: 146px; }
+.damage.마음 { top: 219px; }
+.damage.지능 { top: 292px; }
+
+.details {
+    top: 0px !important;
+    height: 352px !important;
+}
+
+.details > .damageLabel,
+.details > .damageAmount {
+    display: none;
+}
+
+.onTurn {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.damageDealer {
+    font-size: 11px;
+}
+
+.unitDamage {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.unitDamage:after {
+    content: " HP";
+}
+
+hr {
+    margin: 5px 0 5px 0 !important;
+    border-color: black;
+}
+
+.detailsContainer > hr:last-child {
+    display: none;
+}
+
+.detailsContainer {
+    width: 100%;
+}
+
+.turnContainer[current-type=""] > div:hover { background-color: rgba(0,0,0,0.1); }
+.turnContainer[current-type="힘"] > div:hover { background-color: #e27467; }
+.turnContainer[current-type="속도"] > div:hover { background-color: #7abae2; }
+.turnContainer[current-type="기술"] > div:hover { background-color: #82d782; }
+.turnContainer[current-type="마음"] > div:hover { background-color: #e6c200; }
+.turnContainer[current-type="지능"] > div:hover { background-color: #c565c1; }
+
+.turnContainer.ghosted > div {
+    visibility: hidden;
+}
+
+.turnContainer {
+    height: 58px;
+    width: 140px;
+}
+
+.turnContainer.ghoster > div:not(.ghostContainer) {
+    position: absolute;
+}
+
+.turnContainer.ghoster.ghost-floating > hr {
+    display: none;
+}
+
+.tooltip-inner {
+    white-space: pre;
+    text-align: left;
+}
+
+.details-popover-table td:first-child {
+    text-align: right;
+}
+
+.details-popover-table td + td {
+    padding-left: 5px;
+}
+
+.details-subtotal td {
+    border-top: 1px solid white;
+}
