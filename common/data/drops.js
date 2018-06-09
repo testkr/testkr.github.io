@@ -801,7 +801,7 @@ window.drops = {
         },
         
         {
-            name: '드레스로자 - 옛 왕가의 땅 ~ 왕궁 꼭대기',
+            name: '드레스로자 - 옛 왕가의 대지 ~ 왕궁 상부층',
             shortName: '드레스로자 3',
             thumb: 1784,
             nakama: null,
