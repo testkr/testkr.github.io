@@ -51,7 +51,7 @@ app
                 var version = parseInt(response.data.match(/=\s*(\d+)/)[1],10);
                 if (version <= window.dbVersion) return;
                 noty({
-                    text: '새로운 데이터가 발견됐습니다. 페이지를 새로고침 해주세요',
+                    text: 'New data detected. Please refresh the page.',
                     timeout: 5000,
                     type: 'success',
                     layout: 'topRight',
@@ -67,7 +67,7 @@ app
             $storage.set('charVersion', 5);
             setTimeout(function() {
                 noty({
-                    text: '사이트가 업데이트 되었습니다. 페이지를 새로고침 하거나 인터넷 캐시를 지워주세요!',
+                    text: 'Some stuff changed. Refreshing the page and/or clearing your browser\'s cache may be a smart idea.',
                     timeout: 10000,
                     type: 'error',
                     layout: 'topRight',

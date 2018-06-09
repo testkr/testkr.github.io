@@ -105,21 +105,6 @@ angular.module('optc') .run(function($rootScope, $timeout, $storage, MATCHER_IDS
         var filters = tableData.parameters.filters;
         // filter by type
         if (filters.type && unit.type !== filters.type) return false;
-		/*if (filters.type){
-            var cond = false
-            if (Array.isArray(unit.type)){
-                for (var type1 in unit.type){
-                    if (unit.type[type1] == filters.type){
-                        cond = true
-                    }
-                }
-            }
-            else if (unit.type == filters.type){
-                cond = true
-            }
-            return cond;
-            
-        }*/
         // filter by class
         if (filters.classes && filters.classes.length) {
             var singleQuery = filters.classes.length == 1, singleClass = unit.class.length > 2;
@@ -161,9 +146,6 @@ angular.module('optc') .run(function($rootScope, $timeout, $storage, MATCHER_IDS
                     // rayleigh shop
                     if (filters.nonFarmable.shop && !flags.shop) return false;
                     if (filters.nonFarmable.shop === false && flags.shop) return false;
-					 // TM RR
-                    if (filters.nonFarmable.tmlrr && !flags.tmlrr) return false;
-                    if (filters.nonFarmable.tmlrr === false && flags.tmlrr) return false;
                 }
             }
         }
@@ -296,7 +278,7 @@ angular.module('optc') .run(function($rootScope, $timeout, $storage, MATCHER_IDS
 
     $timeout(function() {
         jQuery.fn.dataTable.ext.search.push(tableFilter);
-        var types = { story: '스토리', fortnight: '스페셜 던전', raid: '강림', Coliseum: 'Coliseum', Treasure: 'Treasure Map' };
+        var types = { story: '스토리', fortnight: '스페셜 던전', raid: '강림', Coliseum: 'Coliseum' };
         $rootScope.$watch('table',function(table) {
             tableData = table;
             if (table.parameters && table.parameters.filters && table.parameters.filters.farmable) {

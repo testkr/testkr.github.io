@@ -5,7 +5,7 @@ var CharUtils = { };
 /* * * * * Reverse drop map * * * * */
 
 var reverseDropMap = null;
-var marks = { '스토리': 1, '재료': 2, '스페셜 던전': 4, '강림': 8, 'Coliseum': 16, 'Treasure Map': 64 };
+var marks = { '스토리': 1, '재료': 2, '스페셜 던전': 4, '강림': 8, 'Coliseum': 16 };
 
 var generateReverseDropMap = function() {
     reverseDropMap = { };
@@ -102,7 +102,7 @@ CharUtils.searchDropLocations = function(id) {
         for (var island=0;island<window.drops[type].length;++island) {
             var temp = [ ];
             for (var stage in window.drops[type][island]) {
-                if (stage == 'thumb' || stage == 'name' || stage == 'shortName' || stage == 'day' || stage == 'global' || stage == 'condition' || stage == 'completion' || stage == 'challenge' || stage == 'challengeData' || stage == 'showManual' || stage == 'gamewith' || stage == 'teamDatabase' || stage == 'torekuru' || stage == 'inven' || stage == 'inven2' || stage == 'slefty' || stage == 'nakama') continue;
+                if (stage == 'thumb' || stage == 'name' || stage == 'shortName' || stage == 'day' || stage == 'global' || stage == 'condition' || stage == 'completion' || stage == 'challenge' || stage == 'challengeData' || stage == 'showManual' || stage == 'gamewith' || stage == 'teamDatabase' || stage == 'torekuru' || stage == 'inven' || stage == 'inven2') continue;
                 if (window.drops[type][island][stage].indexOf(id) != -1)
                     temp.push(stage);
             }
@@ -155,12 +155,9 @@ CharUtils.searchSameSpecials = function(id) {
     if (!details[id]) return [ ];
     var result = [ ];
     for (var key in details) {
-        if (key == id || !details[key].special) continue;
+        if (key == id || !details[key].special) continue; 
         if (details[key].specialName == details[id].specialName && details[key].special == details[id].special)
             result.push(parseInt(key, 10));
-        if (Array.isArray(details[id].special) && Array.isArray(details[key].special))
-            if (details[key].specialName == details[id].specialName && details[key].special[0].description == details[id].special[0].description)
-                result.push(parseInt(key, 10));
     }
     return result;
 };

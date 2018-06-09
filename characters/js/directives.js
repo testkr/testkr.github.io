@@ -210,7 +210,7 @@ directives.addDebuffOptions = function($timeout, $compile, MATCHER_IDS) {
             element.after(filter);
             $compile(filter)(scope);
             scope.onDebuffClick = function(e,type) {
-                //console.log(scope.filters.debuffs);
+                console.log(scope.filters.debuffs);
                 scope.filters.debuffs = (scope.filters.debuffs == type ? null : type);
             };
         }
@@ -389,12 +389,8 @@ directives.addTags = function($stateParams, $rootScope) {
                 element.append($('<span class="tag flag">스페셜던전 드랍</div>'));
             if (CharUtils.checkFarmable(id, { 강림: true }))
                 element.append($('<span class="tag flag">강림 드랍</div>'));
-			if (CharUtils.checkFarmable(id, { Treasure: true }))
-                element.append($('<span class="tag flag">트레져 맵 드랍</div>'));
             if (CharUtils.checkFarmable(id, { '스토리': true, '스페셜 던전': true }))
                 element.append($('<span class="tag flag">스토리 & 스페셜던전</div>'));
-			 if (CharUtils.checkFarmable(id, { '스토리': true, 강림: true }))
-                element.append($('<span class="tag flag">스토리 & 강림</div>'));
             if (CharUtils.checkFarmable(id, { 강림: true, '스페셜 던전': true }))
                 element.append($('<span class="tag flag">강림 & 스페셜던전</div>'));
             // matchers
@@ -428,11 +424,11 @@ directives.addTags = function($stateParams, $rootScope) {
 		    // limit
                 if (matcher.target.indexOf('limit') === 0 && matcher.matcher.test(data[matcher.target])) {
                     name = matcher.name;
-                    if (!/limit$/.test(name)) name = name.replace(/ers$/,'ing').replace(/s$/,'') + ' limit';;
+                    if (!/limit$/.test(name)) name = name.replace(/ers$/,'ing').replace(/s$/,'');
                     else name = name.replace(/s$/,'');
                     name = name.replace(/iing/,'ying');
                      if (name != "한계돌파 캐릭터 표시"){
-						element.append($('<span class="tag limit">' + name + '</div>'));
+			     element.append($('<span class="tag limit">' + name + '</div>'));
 		     }
                 }
             });
