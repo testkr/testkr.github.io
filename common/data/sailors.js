@@ -29,10 +29,10 @@ window.sailors = {
     526: {
         rcvStatic: function(p) { return p.unit.type == "마음" ? 15 : 0; },
     },
-    527: {//not working
+    527: {
         rcvStatic: function(p) { return p.percHP <= 30.0 && p.slot == p.sourceSlot ? 50 : 0; },
     },
-    528: {//not working
+    528: {
         rcvStatic: function(p) { return p.percHP <= 30.0 && p.slot == p.sourceSlot ? 50 : 0; },
     },
     553: {
@@ -85,10 +85,10 @@ window.sailors = {
     1175: {
         atkStatic: function(p) { return p.unit.class.has("참격") ? 20 : 0; },
     },
-    1176: {//not working
+    1176: {
         rcvStatic: function(p) { return p.percHP <= 30.0 && p.slot == p.sourceSlot ? 50 : 0; },
     },
-    1177: {//not working
+    1177: {
         rcvStatic: function(p) { return p.percHP <= 30.0 && p.slot == p.sourceSlot ? 50 : 0; },
     },
     1183: {
@@ -270,10 +270,10 @@ window.sailors = {
     1540: {
         atkStatic: function(p) { return p.unit.type == "지능" ? 50 : 0; },
     },
-    1574: {//not working
+    1574: {
         atkStatic: function(p) { return p.percHP <= 30.0 && p.slot == p.sourceSlot ? 200 : 0; },
     },
-    1575: {//not working
+    1575: {
         atkStatic: function(p) { return p.percHP <= 30.0 && p.slot == p.sourceSlot ? 200 : 0; },
     },
     1613: {//not working
@@ -304,6 +304,16 @@ window.sailors = {
     1700: {
         atkStatic: function(p) { return p.unit.class.has("격투") ? 75 : 0; },
     },
+    1705: {
+        atkStatic: function(p) { return 50; },
+        rcvStatic: function(p) { return 50; },
+        hpStatic: function(p) { return 50; },
+    },
+    1706: {
+        atkStatic: function(p) { return 50; },
+        rcvStatic: function(p) { return 50; },
+        hpStatic: function(p) { return 50; },
+    },
     1728: {
         atkStatic: function(p) { return p.unit.type == "힘" || p.unit.type == "기술" || p.unit.type == "속도" ? 30 : 0; },
         rcvStatic: function(p) { return p.unit.type == "힘" || p.unit.type == "기술" || p.unit.type == "속도" ? 30 : 0; },
@@ -314,15 +324,15 @@ window.sailors = {
         rcvStatic: function(p) { return p.unit.type == "힘" || p.unit.type == "기술" || p.unit.type == "속도" ? 30 : 0; },
         hpStatic: function(p) { return p.unit.type == "힘" || p.unit.type == "기술" || p.unit.type == "속도" ? 30 : 0; },
     },
-    1705: {
-        atkStatic: function(p) { return 50; },
-        rcvStatic: function(p) { return 50; },
-        hpStatic: function(p) { return 50; },
+    1744: {
+        atkStatic: function(p) { return p.unit.class.has("사격") ? 30 : 0; },
+        rcvStatic: function(p) { return p.unit.class.has("사격") ? 30 : 0; },
+        hpStatic: function(p) { return p.unit.class.has("사격") ? 30 : 0; },
     },
-    1706: {
-        atkStatic: function(p) { return 50; },
-        rcvStatic: function(p) { return 50; },
-        hpStatic: function(p) { return 50; },
+    1745: {
+        atkStatic: function(p) { return p.unit.class.has("사격") ? 30 : 0; },
+        rcvStatic: function(p) { return p.unit.class.has("사격") ? 30 : 0; },
+        hpStatic: function(p) { return p.unit.class.has("사격") ? 30 : 0; },
     },
     1752: {
         atkStatic: function(p) { return p.unit.class.has("참격") ? 20 : 0; },
@@ -353,5 +363,170 @@ window.sailors = {
     1798: {
         atkStatic: function(p) { return p.unit.type == "힘" || p.unit.type == "기술" || p.unit.type == "속도" ? 75 : 0; },
         hpStatic: function(p) { return p.unit.type == "힘" || p.unit.type == "기술" || p.unit.type == "속도" ? 75 : 0; },
+    },
+    1890: {
+        rcvStatic: function(p) { return p.unit.class.has("사격") ? 50 : 0; },
+    },
+    1891: {
+        rcvStatic: function(p) { return p.unit.class.has("사격") ? 50 : 0; },
+    },
+    1892: {
+        atk: function(p) { return p.percHP <= 50.0 && p.slot == p.sourceSlot ? 1.25 : 1; },
+    },
+    1893: {
+        atk: function(p) { return p.percHP <= 50.0 && p.slot == p.sourceSlot ? 1.25 : 1; },
+    },
+    1907: {
+        atkStatic: function(p) { return p.slot <= 1 ? 100 : 0; },
+    },
+    1908: {
+        atkStatic: function(p) { return p.slot <= 1 ? 100 : 0; },
+    },
+    1973: {
+        atkStatic: function(p) { return p.unit.class.has("박식") ? 75 : 0; },
+    },
+    1974: {
+        atkStatic: function(p) { return p.unit.class.has("박식") ? 75 : 0; },
+    },
+    1975: {
+        atkStatic: function(p) { return p.percHP <= 30.0 ? 40 : 0; },
+    },
+    1976: {
+        atkStatic: function(p) { return p.percHP <= 30.0 ? 40 : 0; },
+    },
+    1983: {
+        atkStatic: function(p) { return p.unit.type == "마음" || p.unit.type == "지능" ? 75 : 0; },
+        hpStatic: function(p) { return p.unit.type == "마음" || p.unit.type == "지능" ? 75 : 0; },
+        rcvStatic: function(p) { return p.unit.type == "마음" || p.unit.type == "지능" ? 75 : 0; },
+    },
+    1984: {
+        atkStatic: function(p) { return p.unit.class.has("자유") ? 150 : 0; },
+        hpStatic: function(p) { return p.unit.class.has("자유") ? 150 : 0; },
+        rcvStatic: function(p) { return p.unit.class.has("자유") ? 150 : 0; },
+    },
+    1985: {
+        atkStatic: function(p) { return p.unit.class.has("자유") ? 150 : 0; },
+        hpStatic: function(p) { return p.unit.class.has("자유") ? 150 : 0; },
+        rcvStatic: function(p) { return p.unit.class.has("자유") ? 150 : 0; },
+    },
+    1992: {
+        atkStatic: function(p) { return p.unit.class.has("자유") ? 50 : 0; },
+    },
+    1993: {
+        atkStatic: function(p) { return p.unit.class.has("자유") ? 50 : 0; },
+    },
+    2006: {
+        atkStatic: function(p) { return (p.colorCount.STR>=4 && p.unit.type == "힘") ? 125 : (p.colorCount.DEX>=4 && p.unit.type == "기술") ? 125 : (p.colorCount.QCK>=4 && p.unit.type == "속도") ? 125 : (p.colorCount.PSY>=4 && p.unit.type == "마음") ? 125 : (p.colorCount.INT>=4 && p.unit.type == "지능") ? 125 : 0; },
+        type: "type",
+    },
+    2007: {
+        atkStatic: function(p) { return (p.colorCount.STR>=4 && p.unit.type == "힘") ? 125 : (p.colorCount.DEX>=4 && p.unit.type == "기술") ? 125 : (p.colorCount.QCK>=4 && p.unit.type == "속도") ? 125 : (p.colorCount.PSY>=4 && p.unit.type == "마음") ? 125 : (p.colorCount.INT>=4 && p.unit.type == "지능") ? 125 : 0; },
+        type: "type",
+    },
+    2026: {
+        atkStatic: function(p) { return p.unit.type == "마음" || p.unit.type == "속도" ? 50 : 0; },
+    },
+    2027: {
+        atkStatic: function(p) { return p.unit.type == "마음" || p.unit.type == "속도" ? 50 : 0; },
+    },
+    2031: {
+        atkStatic: function(p) { return p.unit.type == "지능"  ? 50 : 0; },
+        hpStatic: function(p) { return p.unit.type == "지능"  ? 50 : 0; },
+        rcvStatic: function(p) { return p.unit.type == "지능"  ? 50 : 0; },
+    },
+    2038: {
+        atkStatic: function(p) { return p.unit.type == "마음" || p.unit.type == "속도" ? 40 : 0; },
+        rcvStatic: function(p) { return p.unit.type == "마음" || p.unit.type == "속도" ? 40 : 0; },
+        hpStatic: function(p) { return p.unit.type == "마음" || p.unit.type == "속도" ? 40 : 0; },
+    },
+    2039: {
+        atkStatic: function(p) { return p.unit.type == "마음" || p.unit.type == "속도" ? 40 : 0; },
+        rcvStatic: function(p) { return p.unit.type == "마음" || p.unit.type == "속도" ? 40 : 0; },
+        hpStatic: function(p) { return p.unit.type == "마음" || p.unit.type == "속도" ? 40 : 0; },
+    },
+    2040: {
+        atkStatic: function(p) { return p.unit.class.has("격투") ? 40 : 0; },
+        rcvStatic: function(p) { return p.unit.class.has("격투") ? 40 : 0; },
+        hpStatic: function(p) { return p.unit.class.has("격투") ? 40 : 0; },
+    },
+    2041: {
+        atkStatic: function(p) { return p.unit.class.has("격투") ? 40 : 0; },
+        rcvStatic: function(p) { return p.unit.class.has("격투") ? 40 : 0; },
+        hpStatic: function(p) { return p.unit.class.has("격투") ? 40 : 0; },
+    },
+    2042: {
+        atkStatic: function(p) { return 20; },
+        rcvStatic: function(p) { return 20; },
+        hpStatic: function(p) { return 20; },
+    },
+    2043: {
+        atkStatic: function(p) { return 20; },
+        rcvStatic: function(p) { return 20; },
+        hpStatic: function(p) { return 20; },
+    },
+    2067: {
+        atkStatic: function(p) { return p.unit.class.has("참격") ? 30 : 0; },
+        rcvStatic: function(p) { return p.unit.class.has("참격") ? 30 : 0; },
+        hpStatic: function(p) { return p.unit.class.has("참격") ? 30 : 0; },
+    },
+    2068: {
+        atkStatic: function(p) { return p.unit.class.has("참격") ? 30 : 0; },
+        rcvStatic: function(p) { return p.unit.class.has("참격") ? 30 : 0; },
+        hpStatic: function(p) { return p.unit.class.has("참격") ? 30 : 0; },
+    },
+    2081: {
+        atkStatic: function(p) { return p.unit.class.has("참격") ? 40 : 0; },
+    },
+    2110: {
+        atkStatic: function(p) { return p.unit.type == "기술" ? 20 : 0; },
+        rcvStatic: function(p) { return p.unit.type == "기술" ? 20 : 0; },
+        hpStatic: function(p) { return p.unit.type == "기술" ? 20 : 0; },
+    },
+    2111: {
+        atkStatic: function(p) { return p.unit.type == "기술" ? 20 : 0; },
+        rcvStatic: function(p) { return p.unit.type == "기술" ? 20 : 0; },
+        hpStatic: function(p) { return p.unit.type == "기술" ? 20 : 0; },
+    },
+    2122: {
+        atkStatic: function(p) { return p.unit.class.has("박식") ? 50 : 0; },
+        rcvStatic: function(p) { return p.unit.class.has("박식") ? 50 : 0; },
+        hpStatic: function(p) { return p.unit.class.has("박식") ? 50 : 0; },
+    },
+    2123: {
+        atkStatic: function(p) { return p.unit.class.has("박식") ? 50 : 0; },
+        rcvStatic: function(p) { return p.unit.class.has("박식") ? 50 : 0; },
+        hpStatic: function(p) { return p.unit.class.has("박식") ? 50 : 0; },
+    },
+    5000: {
+        atkStatic: function(p) { return p.unit.type == "마음" || p.unit.type == "지능" ? 50 : 0; },
+    },
+    5001: {
+        rcvStatic: function(p) { return p.unit.type == "마음" || p.unit.type == "지능" ? 30 : 0; },
+    },
+    5002: {
+        atkStatic: function(p) { return p.unit.type == "마음" || p.unit.type == "지능" ? 75 : 0; },
+        hpStatic: function(p) { return p.unit.type == "마음" || p.unit.type == "지능" ? 75 : 0; },
+        rcvStatic: function(p) { return p.unit.type == "마음" || p.unit.type == "지능" ? 75 : 0; },
+    },
+    5003: {
+        atkStatic: function(p) { return p.unit.type == "마음" || p.unit.type == "지능" ? 75 : 0; },
+        hpStatic: function(p) { return p.unit.type == "마음" || p.unit.type == "지능" ? 75 : 0; },
+        rcvStatic: function(p) { return p.unit.type == "마음" || p.unit.type == "지능" ? 75 : 0; },
+    },
+    5012: {
+        atkStatic: function(p) { return p.unit.type == "마음" ? 30 : 0; },
+    },
+    5013: {
+        atkStatic: function(p) { return p.unit.type == "기술" ? 30 : 0; },
+    },
+    5014: {
+        atkStatic: function(p) { return p.unit.type == "마음" || p.unit.type == "기술" ? 50 : 0; },
+        hpStatic: function(p) { return p.unit.type == "마음" || p.unit.type == "기술" ? 50 : 0; },
+        rcvStatic: function(p) { return p.unit.type == "마음" || p.unit.type == "기술" ? 50 : 0; },
+    },
+    5015: {
+        atkStatic: function(p) { return p.unit.type == "마음" || p.unit.type == "기술" ? 50 : 0; },
+        hpStatic: function(p) { return p.unit.type == "마음" || p.unit.type == "기술" ? 50 : 0; },
+        rcvStatic: function(p) { return p.unit.type == "마음" || p.unit.type == "기술" ? 50 : 0; },
     },
 };
