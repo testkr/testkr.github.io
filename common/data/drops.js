@@ -2597,6 +2597,14 @@ window.drops = {
             gamewith: 59779,
             completion: '선박: 검은수염 해적단 호',
         },
+        
+        {
+            name: '특훈의 숲: 갱',
+            thumb: 1016,
+            nakama: null,
+            gamewith: 107299,
+            completion: '선박: 노스트라 카스텔로',
+        },
 
    ]
 
