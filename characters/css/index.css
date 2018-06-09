@@ -98,7 +98,6 @@ input[type="text"] {
 
 .type.filter, #controllers > span:not(.separator) {
     border: none;
-    margin-right:-4px;
 }
 
 .type.filter:not(.active):not(:hover), #controllers > span:not(.separator):not(.active):not(:hover) {
@@ -629,7 +628,7 @@ h3 > label {
 }
 
 tr.incomplete td:nth-child(2) > a:after {
-    content: "미완성";
+    content: "INCOMPLETE";
     padding: 5px;
     border-radius: 10px;
     margin-left: 10px;
@@ -641,7 +640,7 @@ tr.incomplete td:nth-child(2) > a:after {
 }
 
 tr.preview td:nth-child(2) > a:after {
-    content: "미리보기";
+    content: "PREVIEW";
     padding: 5px;
     border-radius: 10px;
     margin-left: 10px;
@@ -665,8 +664,8 @@ tr.preview td:nth-child(2) > a:after {
 }
 
 #mainTable td:last-child, #mainTable th:last-child {
-    width: 90px;
-    min-width: 75px;
+    width: 0%;
+    min-width: 0;
 }
 
 #mainTable td:last-child {
@@ -685,7 +684,7 @@ tr.preview td:nth-child(2) > a:after {
 }
 
 #mainTable td:last-child > label > input {
-    margin-top: 20%;
+    margin-top: 40%;
 }
 
 #mainTable_wrapper > :first-child {
@@ -830,7 +829,6 @@ tr.preview td:nth-child(2) > a:after {
 
 .clickable, #clear-input-button {
     cursor: pointer !important;
-    witdh: 100px;
 }
 
 #clear-input-button:hover {

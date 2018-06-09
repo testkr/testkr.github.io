@@ -1,4 +1,4 @@
-<div id="clear-button" class="filter-header" ng-click="clearFilters()">Clear filters</div>
+<div id="clear-button" class="filter-header" ng-click="clearFilters()">필터초기화</div>
 
 <div class="filter-container">
     <span class="filter-header">속성</span>
@@ -49,36 +49,32 @@
     <span class="filter-header">드랍 필터</span>
     <span ng-repeat="type in [ '파밍 가능', '파밍 불가' ]" class="filter width-6 drop" ng-model="filters.drop"
         ng-class="{ active: filters.drop == type }" ng-click="onFilterClick($event,type)">{{type}}</span>
-    <span ng-repeat="type in [ '글로벌 캐릭터', '일본판 한정' ]" class="filter width-6 drop" ng-model="filters.server"
+    <span ng-repeat="type in [ '글로벌 캐릭터', '일본판 캐릭터' ]" class="filter width-6 drop" ng-model="filters.server"
         ng-class="{ active: filters.server == type }" ng-click="onFilterClick($event,type)">{{type}}</span>
     <span ng-repeat="type in [ '레어 동료', '레어 동료 제외' ]" class="filter width-6 drop" ng-model="filters.rr"
         ng-class="{ active: filters.rr == type }" ng-click="onFilterClick($event,type)">{{type}}</span>
-    <span ng-repeat="type in [ '소켓 캐릭터', '비소켓 캐릭터' ]" class="filter width-6 drop" ng-model="filters.socket"
+    <span ng-repeat="type in [ '슬롯 캐릭터', '비슬롯 캐릭터' ]" class="filter width-6 drop" ng-model="filters.socket"
         ng-class="{ active: filters.socket == type }" ng-click="onFilterClick($event,type)">{{type}}</span>
 </div>
 
 <div class="filter-container conditional" ng-show="filters.drop == '파밍 가능'">
     <span class="filter-header">파밍 가능한 장소</span>
     <span class="filter width-6 drop" ng-class="{ active: filters.farmable.story }"
-        ng-model="filters.farmable.story" ng-click="onDropFilterClick($event,true)">스토리 한정</span><!--
+        ng-model="filters.farmable.story" ng-click="onDropFilterClick($event,true)">스토리 드랍</span><!--
  --><span class="filter width-6 exc" ng-class="{ active: filters.farmable.story === false }"
         ng-model="filters.farmable.story" ng-click="onDropFilterClick($event,false)">스토리 숨김</span>
     <span class="filter width-6 drop" ng-class="{ active: filters.farmable.fortnight }"
-        ng-model="filters.farmable.fortnight" ng-click="onDropFilterClick($event,true)">스페셜던전 한정</span><!--
+        ng-model="filters.farmable.fortnight" ng-click="onDropFilterClick($event,true)">스폐셜던전 드랍</span><!--
  --><span class="filter width-6 exc" ng-class="{ active: filters.farmable.fortnight === false }"
-        ng-model="filters.farmable.fortnight" ng-click="onDropFilterClick($event,false)">스페셜던전 숨김</span>
+        ng-model="filters.farmable.fortnight" ng-click="onDropFilterClick($event,false)">스페셜 숨김</span>
     <span class="filter width-6 drop" ng-class="{ active: filters.farmable.raid }"
-        ng-model="filters.farmable.raid" ng-click="onDropFilterClick($event,true)">강림 한정</span><!--
+        ng-model="filters.farmable.raid" ng-click="onDropFilterClick($event,true)">강림 드랍</span><!--
  --><span class="filter width-6 exc"  ng-class="{ active: filters.farmable.raid === false }"
         ng-model="filters.farmable.raid" ng-click="onDropFilterClick($event,false)">강림 숨김</span>
     <span class="filter width-6 drop" ng-class="{ active: filters.farmable.Coliseum }"
-        ng-model="filters.farmable.Coliseum" ng-click="onDropFilterClick($event,true)">콜로세움 한정</span><!--
+        ng-model="filters.farmable.Coliseum" ng-click="onDropFilterClick($event,true)">콜로세움 드랍</span><!--
  --><span class="filter width-6 exc"  ng-class="{ active: filters.farmable.Coliseum === false }"
         ng-model="filters.farmable.Coliseum" ng-click="onDropFilterClick($event,false)">콜로세움 숨김</span>
-    <span class="filter width-6 drop" ng-class="{ active: filters.farmable.Treasure }"
-        ng-model="filters.farmable.Treasure" ng-click="onDropFilterClick($event,true)">트레저맵 한정</span><!--
- --><span class="filter width-6 exc"  ng-class="{ active: filters.farmable.Treasure === false }"
-        ng-model="filters.farmable.Treasure" ng-click="onDropFilterClick($event,false)">트레저맵 숨김</span>
 </div>
 
 <div class="filter-container conditional" ng-show="filters.drop == '파밍 불가'">
@@ -87,16 +83,12 @@
         ng-model="filters.nonFarmable.lrr" ng-click="onDropFilterClick($event,true)">씨크릿 스고페스</span><!--
  --><span class="filter width-6 drop" ng-class="{ active: filters.nonFarmable.lrr === false }"
         ng-model="filters.nonFarmable.lrr" ng-click="onDropFilterClick($event,false)">씨크릿스고 숨김</span>
-    <span class="filter width-6 drop" ng-class="{ active: filters.nonFarmable.tmlrr }"
-        ng-model="filters.nonFarmable.tmlrr" ng-click="onDropFilterClick($event,true)">트레져맵 한정</span><!--
- --><span class="filter width-6 drop" ng-class="{ active: filters.nonFarmable.tmlrr === false }"
-        ng-model="filters.nonFarmable.tmlrr" ng-click="onDropFilterClick($event,false)">트레저맵 숨김</span>
     <span class="filter width-6 drop" ng-class="{ active: filters.nonFarmable.promo }"
-        ng-model="filters.nonFarmable.promo" ng-click="onDropFilterClick($event,true)">프로모션 한정</span><!--
+        ng-model="filters.nonFarmable.promo" ng-click="onDropFilterClick($event,true)">프로모션</span><!--
  --><span class="filter width-6 drop" ng-class="{ active: filters.nonFarmable.promo === false }"
         ng-model="filters.nonFarmable.promo" ng-click="onDropFilterClick($event,false)">프로모션 숨김</span>
     <span class="filter width-6 drop" ng-class="{ active: filters.nonFarmable.special }"
-        ng-model="filters.nonFarmable.special" ng-click="onDropFilterClick($event,true)">이벤트 한정</span><!--
+        ng-model="filters.nonFarmable.special" ng-click="onDropFilterClick($event,true)">이벤트</span><!--
  --><span class="filter width-6 drop" ng-class="{ active: filters.nonFarmable.special === false }"
         ng-model="filters.nonFarmable.special" ng-click="onDropFilterClick($event,false)">이벤트 숨김</span>
     <span class="filter width-6 drop" ng-class="{ active: filters.nonFarmable.shop }"
