@@ -134,7 +134,7 @@ input[type="text"] {
 .TND     { background: peru; }
 .BLOCK   { background: darkslateblue; }
 .BOMB    { background: maroon; }
-.RAINBOW { background: magenta; }
+.RAINBOW { background: linear-gradient(90deg,#fa8072,#ffd700,#90ee90,#87cefa, #da70d6); }
 .G       { background: orange; }
 .EMPTY   { background: #777; }
 
@@ -153,12 +153,89 @@ input[type="text"] {
     margin-right: 5px;
 }
 
-.badge-japan + div, .badge-global + div {
+.badge-base {
+    float: left;
+    position: relative;
+    top: 2px;
+    width: 125px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.badge-sbase {
+    float: left;
+    position: relative;
+    top: 2px;
+    width: 80px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.badge-sbase2 {
+    float: left;
+    position: relative;
+    top: 2px;
+    width: 87px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.badge-level1, .badge-level2, .badge-level3, .badge-level4, .badge-level5, .badge-level6 {
+    float: left;
+    position: relative;
+    top: 2px;
+    width: 200px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.badge-slevel1, .badge-slevel2 {
+    float: left;
+    position: relative;
+    top: 2px;
+    width: 150px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.badge-character1, .badge-character2 {
+    float: left;
+    position: relative;
+    top: 2px;
+    width: 150px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.badge-combined {
+    float: left;
+    position: relative;
+    top: 2px;
+    width: 175px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.badge-japan + div, .badge-global + div, .badge-base + div, .badge-level1 + div, .badge-level2 + div, .badge-level3 + div, .badge-level4 + div, .badge-level5 + div, .badge-level6 + div, .badge-sbase + div, .badge-slevel1 + div, .badge-slevel2 + div, .badge-character1 + div, .badge-character2 + div,.badge-combined + div {
     margin-bottom: 2px;
 }
 
 .badge-japan { background: mediumvioletred; }
 .badge-global { background: rebeccapurple; }
+.badge-base { background: rgb(255,150,150); }
+.badge-level1 { background: rgb(255,130,130); }
+.badge-level2 { background: rgb(255,110,110); }
+.badge-level3 { background: rgb(255,90,90); }
+.badge-level4 { background: rgb(255,70,70); }
+.badge-level5 { background: rgb(255,50,50); }
+.badge-level6 { background: rgb(255,30,30); }
+.badge-character1 { background: rebeccapurple; }
+.badge-character2 { background: rebeccapurple; }
+.badge-combined { background: mediumvioletred; }
+.badge-sbase { background: darkred; }
+.badge-sbase2 { background: darkred; }
+.badge-slevel1 { background: red; }
+.badge-slevel2 { background: red; }
 
 .stars:before, .stars:after {
     font-weight: bold;
