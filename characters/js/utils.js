@@ -5,7 +5,7 @@
     /* * * * * Reverse drop map * * * * */
     
     var reverseDropMap = null;
-    var marks = { '스토리': 1, '재료': 2, '스페셜 던전': 4, '강림': 8, 'Coliseum': 16, '트레져 맵': 64 };
+    var marks = { '스토리': 1, '재료': 2, '스페셜 던전': 4, '강림': 8, '콜로세움': 16, '트레져 맵': 64 };
     
     var generateReverseDropMap = function() {
         reverseDropMap = { };
@@ -16,8 +16,8 @@
                     if (!data || data.constructor != Array) continue;
                     for (var i=0;i<data.length;++i) {
                         if (data[i] < 0 || CharUtils.isFarmable(data[i], type)) continue;
-                        if (drops[type][island].name == 'Coliseum')
-                            flagUnit(data[i], 'Coliseum');
+                        if (drops[type][island].name == '콜로세움')
+                            flagUnit(data[i], '콜로세움');
                         else
                             flagUnit(data[i], type);
                     }
