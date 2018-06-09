@@ -698,13 +698,13 @@ window.drops = {
             completion: '무지개 보석x5',
             gamewith: 54695,
             '01': [  ],
-            '02': [ 1505 ],
+            '02': [  ],
             '03': [  ],
             '04': [ 1560 ],
             '05': [ 1558, 1561 ],
-            '06': [ 1504 ],
-            '07': [ 1505 ],
-            '08': [ 1503 ],
+            '06': [  ],
+            '07': [  ],
+            '08': [  ],
             '09': [ 1557 ],
             '10': [ 1558, 1560 ],
             '11': [ 1561 ],
@@ -732,7 +732,7 @@ window.drops = {
             '11': [  ],
             '12': [ 1634 ],
             '13': [ 1634 ],
-            '14': [ 1396, 1398 ],
+            '14': [  ],
             '15': [ 1636 ],
         },
         
@@ -776,49 +776,6 @@ window.drops = {
             '10': [  ],
             '11': [ 1648 ],
             '12': [ 1782 ],
-        },
-        
-        {
-            name: '드레스로자 - 콜로세움 숙소 ~ 간부탑',
-            shortName: '드레스로자 2',
-            thumb: 2004,
-            global: true,
-            nakama: 1200400,
-            completion: '무지개 보석x5',
-            gamewith: 93492,
-            '01': [ 1648 ],
-            '02': [ 2003 ],
-            '03': [  ],
-            '04': [ 2003 ],
-            '05': [ 1784 ],
-            '06': [ 2002 ],
-            '07': [  ],
-            '08': [ 2002, 1627 ],
-            '09': [  ],
-            '10': [ 2005 ],
-            '11': [ 1400 ],
-            '12': [ 2005, 1736 ],
-        },
-        
-        {
-            name: '드레스로자 - 옛 왕가의 땅 ~ 왕궁 꼭대기 층',
-            shortName: '드레스로자 3',
-            thumb: 1784,
-            nakama: null,
-            completion: '무지개 보석x5',
-            gamewith: 99550,
-            '01': [ 1375, 1627, 2002 ],
-            '02': [ 2051 ],
-            '03': [ 2051 ],
-            '04': [  ],
-            '05': [ 2053 ],
-            '06': [  ],
-            '07': [ 1291, 1375, 1400, 1627, 1719 ],
-            '08': [ 2054 ],
-            '09': [ 2055 ],
-            '10': [ 1400, 2054 ],
-            '11': [ 1421 ],
-            '12': [ 1784 ],
         },
         
     ],
@@ -1861,7 +1818,7 @@ window.drops = {
             thumb: 1812,
             condition: '강인 캐릭터들이 약해진다.',
             gamewith: 7416,
-            '모든 난이도': [ 1811, 1809, -1240, -1575, -1658, -1232, -1238, -1117, -522, -1119, -524, -1504, -1503 ]
+            'All Difficulties': [ 1811, 1809, -1240, -1575, -1658, -1232, -1238, -1117, -522, -1119, -524, -1504, -1503 ]
         },
         
       {
@@ -1869,140 +1826,8 @@ window.drops = {
              thumb: 1818,
              condition: '',
              gamewith: 72655,
-             '모든 난이도': [ 1817, 1819, 1820, -1610, -1656, -1660, -1230, -1236, -1173, -526, -643, -1506, -964 ]
+             'All Difficulties': [ 1817, 1819, 1820, -1610, -1656, -1660, -1230, -1236, -1173, -526, -643, -1506, -964 ]
          },
-				  
-            name: 'Caribou Pirates!',
-            thumb: 1842,
-            global: true,
-            nakama: 2184200,
-            gamewith: 75879,
-            condition: '[STR] orbs will not appear naturally',
-            '모든 난이도': [ 1841, 1843, -1268, -639, -645, -1234, -1270, -1700, -1704, -1501, -1502 ]
-        },
-        
-        {
-            name: 'Supernova! Apoo and Drake!',
-            thumb: 1855,
-            global: true,
-            nakama: 2185500,
-            gamewith: 79678,
-            '모든 난이도': [ 1854, 1856, -1652, -1272, -1278, -1621, -1702, -1558 ]
-        },
-        
-        {
-            name: 'Supernova! Hawkins and Urouge!',
-            thumb: 1867,
-            nakama: 2186700,
-            gamewith: 80643,
-            '모든 난이도': [ 1864, 1866, -1698, -1632, -1706, -1556, -1274, -1276 ]
-        },
-        
-        {
-            name: 'Perona\'s Strange Communal Life!',
-            thumb: 1891,
-            nakama: 2189100,
-            gamewith: 84032,
-            condition: 'Take heavy damage at the start of the island',
-            '모든 난이도': [ 1890, 1892, -1314, -1316, -1322, -1741, -1743, -1559 ]
-        },
-        
-        {
-            name: 'Final Thoughts to my Brother Sanji!',
-            thumb: 1918,
-            nakama: 2191800,
-            gamewith: 85780,
-            '모든 난이도': [ 1917, 1919, -1922, -1751, -1745, -1665, -1320, -1370, -1560 ]
-        },
-        
-        {
-            name: 'Binding and Bonds!',
-            thumb: 1933,
-            nakama: 2193300,
-            gamewith: 86343,
-            condition: 'Take 7% current Health in Environmental Damage every 2 turns',
-            '모든 난이도': [ 1931, 1932, 1933, -1747, -1318, -1324, -1798, -1749, -1561 ]
-        },
-        
-        {
-            name: 'My Ideal Type!',
-            thumb: 1947,
-            nakama: 2194700,
-            gamewith: 88584,
-            '모든 난이도': [ 1946, 1948, -1763, -1796, -1800, -1364, -1678, -1562 ]
-        },
-        
-        {
-            name: 'Devil Oars, Day of the Second Coming',
-            thumb: 1965,
-            nakama: 2196500,
-            gamewith: 91449,
-            '모든 난이도': [ 1964, 1966, -1794, -1368, -1802, -1713, -1840, -1557 ]
-        },
-        
-        {
-            name: 'Supernova! Bonney and Capone!',
-            thumb: 1982,
-            nakama: 2198200,
-            gamewith: 93457,
-            '모든 난이도': [ 1979, 1981, -1921, -1362, -1366, -1770, -1834, -1836, -1633 ]
-        },
-        
-        {
-            name: 'Whitebeard Pirates Commanders! Marco and Vista!',
-            thumb: 1997,
-            nakama: 2199700,
-            gamewith: 94921,
-            '모든 난이도': [ 1994, 1996, -1832, -1408, -1721, -1871, -1838, -1634 ]
-        },
-        
-        {
-            name: 'Makino\'s Bar! Shanks and Makino!',
-            thumb: 2021,
-            nakama: 2202100,
-            gamewith: 96636,
-            '모든 난이도': [ 2018, 2020, -1404, -1593, -1410, -1778, -1873, -1877, -1635 ]
-        },
-        
-        {
-            name: 'Anchoring! Red Hair Pirates!',
-            thumb: 2044,
-            nakama: null,
-            gamewith: 98267,
-            '모든 난이도': [ 2044, 2045, 2046, -1869, -1406, -1824, -1875, -1904, -2044, -1225 ]
-        },
-        
-        {
-            name: 'Germa\'s Lineage Factor!',
-            thumb: 2056,
-            nakama: null,
-            gamewith: 99699,
-            '모든 난이도': [ 2056, 2057, 2058, -1880, -1434, -1412, -1906, -1908, -1859, -1637 ]
-        },
-        
-        {
-            name: 'Strawhat Pirates Pizza Party!! Lunch',
-            thumb: 2087,
-            nakama: null,
-            gamewith: 102409,
-            '모든 난이도': [ 2087, 2088, 2089, 2090, 2091, -1910, -1440, -1442, -1895, -1902, -1714 ]
-        },
-        
-        {
-            name: 'Strawhat Pirates Pizza Party!! Dinner',
-            thumb: 2092,
-            nakama: null,
-            gamewith: 106868,
-            '모든 난이도': [ 2091, 2092, 2093, 2094, 2095, -1935, -1436, -1438, -1926, -1955, -1715 ]
-        },
-        
-        {
-            name: 'Brûlée\'s Gibier Party',
-            thumb: 2024,
-            nakama: null,
-            gamewith: null,
-            '모든 난이도': [ 2127, 2128, 2129, 2130, -1473, -1477, -1974, -1953, -1957, -1717 ]
-        },
     ], 
             
    '강림': [
@@ -2414,183 +2239,7 @@ window.drops = {
             Master: [ 1814 ],
             Expert: [ 1814 ]
         },
-				{
-            name: '결전!! 시저',
-            thumb: 1830,
-            nakama: 4183000,
-            gamewith: 75007,
-            condition: 'Take 10% MAX Health in Environmental Damage every 2 turns',
-            Master: [ 1829 ],
-            Expert: [ 1829 ]
-        },
-        
-        {
-            name: '결전!! 바르톨로메오',
-            thumb: 1879,
-            global: true,
-            nakama: 4187900,
-            gamewith: 81714,
-            condition: 'You can only bring Fighter, Slasher or Striker units',
-            Ultimate: [ 1878 ],
-            Master: [ 1878 ]
-        },
-        
-        {
-            name: '결전!! 레일리',
-            thumb: 1924,
-            global: true,
-            nakama: 4192400,
-            gamewith: 85580,
-            Ultimate: [ 1923 ],
-            Master: [ 1923 ]
-        },
-        
-        {
-            name: '결전!! 세뇨르 핑크',
-            thumb: 1943,
-            nakama: 4194300,
-            gamewith: 88927,
-            Master: [ 1942 ],
-            Expert: [ 1942 ]
-        },
-        
-        {
-            name: '결전!! 로브 루치',
-            thumb: 2015,
-            nakama: 4201500,
-            gamewith: 95424,
-            Ultimate: [ 2014 ],
-            Master: [ 2014 ],
-            Expert: [ 2014 ]
-        },
 
-        {
-            name: '결전!? 루피',
-            thumb: 2033,
-            showManual: true,
-            nakama: null,
-            gamewith: 97354,
-            Ultimate: [ 2032, -2032 ],
-            Master: [ 2032, -2032 ]
-        },
-        
-        {
-            name: '결전!! 조로',
-            thumb: 2097,
-            nakama: null,
-            gamewith: 105734,
-            Ultimate: [ 2096 ],
-            Master: [ 2096 ],
-            Expert : [ 2096 ],
-        },
-        
-        {
-            name: '결전!! 천야차 도플라밍고',
-            thumb: 2201,
-            global: true,
-            nakama: 4220100,
-            gamewith: null,
-            Ultimate: [ 2200 ],
-            Master: [ 2200 ]
-        },
-
-    ],
-
-	'콜로세움': [
-
-        {
-            name: 'Yes',
-            thumb: 779,
-            global: true,
-            gamewith: 17473,
-            slefty: 'coliseums',
-            Exhibition: [ 776, 778, 803, 832, 834, 859, 861, 883, 902, 904, 925, 927, 952, 984, 1017, 1019, 1103, 1105, 1195, 1197, 1221, 1252, 1253, 1293, 1311, 1339, 1340, 1377, 1402, 1423, 1424, 1457, 1459, 1488, 1490, 1526, 1528, 1552, 1585, 1603, 1629, 1860 ],
-            Underground: [ 776, 778, 803, 832, 834, 859, 861, 883, 902, 904, 925, 927, 952, 984, 1017, 1019, 1103, 1105, 1195, 1197, 1221, 1252, 1253, 1293, 1311, 1339, 1340, 1377, 1402, 1423, 1424, 1457, 1459, 1488, 1490, 1526, 1528, 1552, 1585, 1603, 1629, 1791, 1860, 1896, 1977, 2110 ],
-            Chaos: [ 776, 778, 780, 803, 805, 830, 832, 834, 859, 861, 881, 883, 900, 902, 923, 925, 950, 982, 984, 1017, 1015, 1040, 1042, 1086, 1088, 1090, 1101, 1103, 1105, 1140, 1142, 1144, 1195, 1219, 1221, 1250, 1252, 1291, 1293, 1309, 1311, 1337, 1339, 1340, 1375, 1377, 1400, 1421, 1423, 1455, 1457, 1486, 1488, 1525, 1526, 1528, 1552, 1554, 1583, 1585, 1601, 1603, 1627, 1629, 1666, 1693, 1732, 1791, 1827, 1860, 1896, 1944, 1977, 2036, 2110, 2122 ],
-            Neo: [ 1862, 1898, 1975, 2016 ]
-        },
-        
-    ],
-
-            
-    '트레져 맵': [
-
-        {
-            name: '쥬라큘 미호크',
-            thumb: 1808,
-            global: true,
-            nakama: 8180800,
-            gamewith: 72766,
-            'Raging Sea': [ 1807 ]
-        },
-
-        {
-            name: '에드워드 뉴게이트',
-            thumb: 1853,
-            global: true,
-            nakama: 8185300,
-            gamewith: 79614,
-            'Raging Sea': [ 1852 ]
-        },
-
-        {
-            name: '백마의 캐번디시',
-            thumb: 1889,
-            global: true,
-            nakama: 8188900,
-            gamewith: 83086,
-            'Raging Sea': [ 1888 ]
-        },
-
-        {
-            name: '리피: 기어 4th',
-            thumb: 1916,
-            global: true,
-			nakama: 8191600,
-            gamewith: 85567,
-            'Calm Sea': [ 1915 ]
-        },
-
-        {
-            name: '불주먹 에이스',
-            thumb: 1941,
-			nakama: 8194100,
-            gamewith: 87389,
-            'Raging Sea': [ 1940 ]
-        },
-
-        {
-            name: '불주먹 사보',
-            thumb: 1972,
-			nakama: 8197200,
-            gamewith: null,
-            'Raging Sea': [ 1971 ]
-        },
-
-        {
-            name: '상디와 조로',
-            thumb: 2000,
-            nakama: null,
-            gamewith: 94667,
-            'Raging Sea': [ 1998, 1999 ]
-        },
-
-        {
-            name: '보르살리노',
-            thumb: 2064,
-            nakama: null,
-            gamewith: 101870,
-            'Raging Sea': [ 2063 ]
-        },
-
-        {
-            name: '빅 맘',
-            thumb: 2109,
-            nakama: null,
-            gamewith: null,
-            'Sweet Sea': [ 2108 ]
-        },
-        
     ],
 
     '이벤트 던전': [
@@ -2803,7 +2452,7 @@ window.drops = {
             'Marco': [ 301, 101, 96, 79, 90, 348, -649, -251, -750, -842, -993, -1173, -508, -631, -378, -891, -1226 ],
             'Zoro': [ 301, 101, 96, 79, 90, 348, -1362, -844, -1081, -1125, -1410, -546, -1282, -234, -812, -47 ],
             'Boa Hancock': [ 303, 103, 87, 98, 81, 92, 350, -416, -1445, -253, -677, -1320, -1448, -22, -402, -506, -588, -893, -1157, -702 ],
-            '바르톨로메오': [ 304, 104, 88, 99, 82, 93, 351, -1035, -221, -357, -643, -840, -1025, -1029, -225, -541, -733, -1056 ],
+            'Bartolomeo': [ 304, 104, 88, 99, 82, 93, 351, -1035, -221, -357, -643, -840, -1025, -1029, -225, -541, -733, -1056 ],
             'Borsalino': [ 302, 102, 86, 97, 80, 91, 349, -1240, -77, -257, -760, -943, -1272, -1551, -896, -398, -793, -1058, -59 ],
             'Captain Buggy': [ 300, 100, 84, 95, 78, 89, 347, -1391, -1031, -1232, -1276, -1550, -739, -214, -707, -735, -890, -1318, -290 ],
         },
@@ -2832,26 +2481,6 @@ window.drops = {
             gamewith: 62386,
             condition: 'Gain gems by completeing the missions. Once you complete a mission, it will no longer be available and the next difficulty will be available. Total of 46 gems possible. Only Booster characters will drop posters.',
             '모든 난이도': [ 591, 592, 593, 594, 595, 189, 190, 191, 192, 193 ],
-        },
-				 {
-            name: '해적 사냥꾼의 훈련의 기억',
-            thumb: 1900,
-            global: true,
-            nakama: 6190000,
-            gamewith: 85069,
-            showManual: true,
-            condition: '조로 드롭 확정',
-            '모든 난이도': [ 1900, -1921, -1362, -1388, -8, -906, -1175, -554, -218, -219 ],
-        },
-        
-        {
-            name: '전투를 위한 준비! 아오키지와 아카이누!',
-            thumb: 1280,
-            nakama: null,
-            gamewith: 98232,
-            showManual: true,
-            '아오키지': [ 298, 1225, 1226, 1280, 1281 ],
-            '아카이누': [ 1223, 1279, 1283, 1417, 1418 ],
         },
 
    ],
@@ -2968,15 +2597,6 @@ window.drops = {
             gamewith: 59779,
             completion: '선박: 검은수염 해적단 호',
         },
-
-				{
-            name: '특훈의 숲: 갱',
-            thumb: 1016,
-            nakama: null,
-            gamewith: 107299,
-            completion: '선박: 트스트라 카스텔로',
-        },
-
 
    ]
 
