@@ -105,6 +105,12 @@
                             <a href = "https://translate.google.com/translate?sl=auto&tl=ko&js=y&prev=_t&hl=ko&ie=UTF-8&u=http://slefty.herokuapp.com/{{island.teamDatabase}}" target="_blank">팀 데이터베이스 (한글번역)</a>
                         </td>
                     </tr>
+					 <tr ng-if="island.slefty" hide-when-empty>
+                        <td>Slefty's Team Database</td>
+                        <td colspan="2">
+                            <a href = "http://slefty.herokuapp.com/{{island.slefty}}" target="_blank">Slefty's Team Database Page</a>
+                        </td>
+                    </tr>
 					 <tr ng-if="island.nakama" hide-when-empty>
                         <td>Nakama Network</td>
                         <td colspan="2">
@@ -168,7 +174,7 @@
                     ng-model="queryFilter" ng-model-options="{ debounce: 500 }" ng-change="changeQueryFilter()" id="search">
             </h1>
 
-            <div ng-repeat="type in [ '스토리', '재료', '스페셜 던전', '강림', '이벤트 던전', '특훈의 숲' ]"
+            <div ng-repeat="type in [ '스토리', '재료', '스페셜 던전', '강림','콜로세움', '트레져 맵', '이벤트 던전', '특훈의 숲' ]"
                 class="type collapsed" collapsable hidden-units="hiddenUnits" only-global="onlyGlobal"
                 target="type.html" type="type" data="data" query="query">
                 <h2>
